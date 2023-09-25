@@ -1,0 +1,175 @@
+.uslugi__con {
+    width: 1920px;
+    height: 796px;
+    margin: 0 auto;
+}
+
+.frame__title1 {
+    color: #0D4C93;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.frame__1 {
+    background: linear-gradient(180deg, #FAFAFA 0%, rgba(250, 250, 250, 0.00) 100%);
+    background-image: url(../../assets/img/uslugiBlur.png);
+    width: 1860px;
+    height: 681px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.item__1 {
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+    width: 388px;
+    height: 491px;
+    flex-shrink: 0;
+    margin-left: 280px;
+    text-align: center;
+
+    .item__1__text__1 {
+        color: #0D4C93;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.3px;
+        margin-top: 22px;
+    }
+
+    .item__1__text__2 {
+        width: 305px;
+        height: 110px;
+        flex-shrink: 0;
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        margin-left: 43px;
+        margin-top: 14px;
+    }
+
+    .item__1__btn__1 {
+        width: 270px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        border: none;
+        margin-top: 62px;
+    }
+}
+.item__2 {
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+    width: 388px;
+    height: 491px;
+    flex-shrink: 0;
+    margin-left: 95px;
+    text-align: center;
+    .item__2__text__1 {
+        color: #0D4C93;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.3px;
+        margin-top: 22px;
+    }
+
+    .item__2__text__2 {
+        width: 305px;
+        height: 110px;
+        flex-shrink: 0;
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        margin-left: 43px;
+        margin-top: 14px;
+    }
+
+    .item__2__btn__1 {
+        width: 270px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        border: none;
+        margin-top: 62px;
+    }
+
+    .item__2__img__1{
+        border-radius: 50px 50px 0px 0px;
+    }
+}
+.item__3 {
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+    width: 388px;
+    height: 491px;
+    flex-shrink: 0;
+    margin-left: 95px;
+    text-align: center;
+    .item__3__text__1 {
+        color: #0D4C93;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.3px;
+        margin-top: 22px;
+    }
+
+    .item__3__text__2 {
+        width: 305px;
+        height: 110px;
+        flex-shrink: 0;
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        margin-left: 43px;
+        margin-top: 14px;
+    }
+
+    .item__3__btn__1 {
+        width: 270px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        border: none;
+        margin-top: 62px;
+    }
+
+    .item__3__img__1{
+        border-radius: 50px 50px 0px 0px;
+    }
+}
