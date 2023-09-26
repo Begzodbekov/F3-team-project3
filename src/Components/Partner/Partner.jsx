@@ -1,25 +1,26 @@
 import React from "react";
-import "Partner.scss";
+import "./Partner.scss";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles 
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Grid, Pagination } from 'swiper/modules';
 
 function Partner() {
   return (
+    
     <div className="container">
+    
       <p className="text_one">ПАРТНЕРЫ</p>
       <div className="partner_bigbox">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+
+        
+        
       </div>
     </div>
   );
