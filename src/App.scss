@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 .container{
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 0px 10px;
+  max-width: 1366px !important;
+  margin: 0 auto !important;
+  padding: 0px 10px !important;
+}
+ul,ol{
+  list-style-type: none !important;
+  a{
+    text-decoration: none !important;
+  }
 }
