@@ -99,7 +99,7 @@ ol,ul{
         .product__fours-img{
             width: 302px;
             height: 192px;
-            margin-left: -30x;
+            // margin-left: -30x;
         }
         .fo-info{
             text-align: center;
@@ -124,7 +124,64 @@ ol,ul{
         .product__fivs-img{
             width: 154px;
             height: 105px;
-            margin-left: 100px;
+            margin-left: 65px;  
+        }
+        .fi-info{
+            text-align: center;
+            color: #363535;
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 112px;
+        }
+        .fi-btn{
+            border-radius: 35px;
+            opacity: 0.9;
+            background: #00C9C9;
+            padding: 24px 59px 23px 58px;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 45px;
+        }
+        .product__last-img{
+            width: 154px;
+            height: 154px;
+            margin-left: 65px;
+        }
+        .si-info{
+            text-align: center;
+            color: #363535;
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 65px;
+        }
+        .si-btn{
+            border-radius: 35px;
+            opacity: 0.9;
+            background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+            padding: 24px 59px 23px 58px;
+            background-color: #fff;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 38px;
         }
     }
+}
+.product__link{
+    width: 427px;
+    height: 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 440px;
+    .bi{
+        margin-left: 6px;
+    }
+}
+.bi{
+
 }

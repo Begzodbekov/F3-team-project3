@@ -44,8 +44,10 @@ function Products() {
                 <button className='si-btn'>Посмотреть все</button>
             </li>
         </ul>
-        <Link>Перейти в каталог нашей продукции </Link>
-       
+        
+        <Link className='product__link'>Перейти в каталог нашей продукции
+        <i class="bi bi-arrow-right-circle"></i>
+        </Link>
       </div>
     </div>
   )
