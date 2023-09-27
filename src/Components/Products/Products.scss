@@ -70,10 +70,58 @@ ol,ul{
             margin-top: 14px;
         }
     
+        .product__third-img{
+            width: 235px;
+            // margin-left: 12px;
+            height: 235px;
+        }
+        .t-info{
+            text-align: center;
+            padding-bottom: 50px;
+            color: #363535;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .t-btn{
+            border-radius: 35px;
+            opacity: 0.9;
+            background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+            padding: 24px 59px 23px 58px;
+            background-color: #fff;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
         .product__fours-img{
-            width: 350px;
+            width: 302px;
             height: 192px;
-            margin-left: -44px;
+            margin-left: -30x;
+        }
+        .fo-info{
+            text-align: center;
+            // padding-bottom: 50px;
+            color: #363535;
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 33px;
+        }
+        .fo-btn{
+            border-radius: 35px;
+            opacity: 0.9;
+            background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+            padding: 24px 59px 23px 58px;
+            background-color: #fff;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 38px;
+        }
+        .product__fivs-img{
+            width: 154px;
+            height: 105px;
+            margin-left: 100px;
         }
     }
 }
