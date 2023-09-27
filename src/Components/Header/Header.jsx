@@ -6,6 +6,7 @@ import Headerphone from '../../assets/img/header_phone.png'
 import Herolupa from '../../assets/img/hero_search_lupa.png'
 import Facebook from '../../assets/img/hero_facebook.png'
 import Russiaflug from '../../assets/img/header_russia_fag.png'
+import { Link } from 'react-router-dom'
 function Header() {
   const [language, setLanguage] = useState('Русский')
   const uzb = useRef()
@@ -80,12 +81,12 @@ function Header() {
                   </nav>
                   <div className="nav_bottom">
                     <ul className='nav_bottom_list'>
-                      <li>МАГАЗИН</li>
-                      <li> О КОМПАНИИ</li>
-                      <li>ПРОДУКЦИЯ</li>
-                      <li>УСЛУГИ</li>
-                      <li>АКЦИИ  И НОВОСТИ</li>
-                      <li> ОБРАТНАЯ СВЯЗЬ</li>
+                      <li className='nav_bottom_item1'><Link>МАГАЗИН</Link></li>
+                      <li className='nav_bottom_itemO'> <span></span> <Link> О КОМПАНИИ </Link></li>
+                      <li><Link>ПРОДУКЦИЯ</Link></li>
+                      <li> <Link>УСЛУГИ</Link></li>
+                      <li><Link>АКЦИИ И НОВОСТИ </Link></li>
+                      <li className='nav_bottom_item6'><Link>ОБРАТНАЯ СВЯЗЬ</Link></li>
                     </ul>
                   </div>
                 </div>
