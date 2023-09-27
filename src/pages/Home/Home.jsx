@@ -8,6 +8,7 @@ import Novosti from '../../Components/NOVOSTI/Novosti'
 import Uslugi from '../../Components/Uslugi/Uslugi'
 import Products from '../../Components/Products/Products'
 import Hero from '../../Components/Hero/Hero'
+import Footer from '../../Components/Footer/Footer'
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
 
           <Uslugi/>
           <Partner/>
+          <Footer/>
 
 
     </div>
