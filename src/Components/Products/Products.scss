@@ -1,0 +1,79 @@
+ol,ul{
+    list-style-type: none;
+}
+.product__tittle{
+    text-align: center;
+    color: #0D4C93;
+    font-size: 40px;
+    font-weight: 500;
+}
+.product__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -81px;
+    width: 1421px;
+    .product__list-item{
+        margin-top: 62px;
+        padding: 52px 71px 42px 71px;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(180deg, #F8F8F8 0% , rgba(248, 248, 248, 0.00) 100%);
+        .s-info{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 400;
+            color: #363535;
+            margin-top: 53px;
+        }
+        .s-btn{
+            border-radius: 35px;
+            opacity: 0.9;
+            background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+            padding: 24px 59px 23px 58px;
+            background-color: #fff;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 27px;    
+        }
+        .product__first-img{
+            width: 220px;
+            height: 220px;
+            margin-left: 38px;
+        }
+        .f-info{
+            text-align: center;
+            margin-top: 7px;
+            color: #363535;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .f-btn{
+            border-radius: 35px;
+            opacity: 0.9;
+            background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+            padding: 24px 59px 23px 58px;
+            background-color: #fff;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 24px;
+        }   
+        .product__second-img{
+            // width: 200px;
+            // height: 157px;
+            margin-left: 42px;
+            margin-top: 14px;
+        }
+    
+        .product__fours-img{
+            width: 350px;
+            height: 192px;
+            margin-left: -44px;
+        }
+    }
+}
