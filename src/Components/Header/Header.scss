@@ -1,0 +1,96 @@
+.nav_inner{
+    margin-left: -90px;
+    .nav{
+        .nav_list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1575px;
+            margin-top: 50px;
+            .nav_list_item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 220px;
+                .nav_location{
+                    border-radius: 25px;
+                    background-color: white;
+                    padding: 13px 12px;
+                }
+                .nav_list_item_address{
+                    line-height: 7px;
+                    margin-top: 11px;
+                }
+                .header_phone{
+                    background-color: #fff;
+                    padding: 14px 15px;
+                    border-radius: 25px;
+                    margin-left: 41px;
+                }
+                .nav_list_item_phone{
+                    line-height: 7px;
+                    margin-top: 11px;
+                    margin-left: 20px;
+                }
+                .nav_search{
+                    border-radius: 25px;
+                    background: #FFF;
+                    padding: 12px;
+                    margin-left: 116px;
+                }
+                .nav_facebook{
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 25px;
+                    background: #FFF;
+                    padding:0px 19px 0px 10px;
+                    p{
+                        margin-left: 10px;
+                        margin-top: 15px;
+                    }
+                }
+                .nav_btnLanguage{
+                    padding: 0px 15px 0px 10px;
+                    border-radius: 25px;
+                    background: #FFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .nav_btn_languagename{
+                        margin-left: 10px;
+                        margin-top: 18px;
+                    }
+                }
+            }
+            .nav_calll{
+                width: 250px;
+            }
+            .header_logo{
+                margin-left: 110px;
+                flex-grow: 1;
+            }
+        }
+    }
+    .nav_bottom{
+        margin-top: 48px;
+        .nav_bottom_list{
+            border-radius: 35px;
+            opacity: 0.9;
+            background: #FFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 34px 16px 49px;
+            li{
+                color: #0D4C93;
+                font-family: Roboto;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}

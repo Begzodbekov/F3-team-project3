@@ -33,3 +33,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+.swiper-button-next {
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+  border-radius: 50%;
+  padding: 30px 30px;
+  color: #fff !important;
+  margin-right: -50px;
+}
+.swiper-button-prev{
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+  border-radius: 50%;
+  padding: 30px 30px;
+  color: #fff !important;
+}
+
