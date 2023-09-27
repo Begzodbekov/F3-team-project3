@@ -125,3 +125,13 @@
         }
     }
 }
+@media(max-width:1390px){
+.nav_list_item{
+    .nav_location{
+        flex-grow: 1;
+    }
+    .nav_list_item_address{
+        display: none;
+    }
+}
+}
