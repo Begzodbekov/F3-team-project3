@@ -23,6 +23,7 @@ ol,ul{
         border-radius: 35px;
         opacity: 0.9;
         background: linear-gradient(180deg, #F8F8F8 0% , rgba(248, 248, 248, 0.00) 100%);
+        flex-wrap: wrap;
         .s-info{
             text-align: center;
             font-size: 24px;
@@ -182,6 +183,86 @@ ol,ul{
         margin-left: 6px;
     }
 }
-.bi{
+@media(max-width:1350px){
+    .product_list_father{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        width: 1695px;
+        .product__list{
+            width: 2189px;
+            flex-wrap: nowrap;
+            .product__list-item{
+                margin-left: 35px;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .product_list_father{
+        width: 733px;
+        overflow: hidden;
+        // flex-wrap: wrap;
+        // width: 895px;
+        .product__list-item{
+            padding: 26px 50px 21px 50px;
+            border-radius: 35px;
+            .f-btn{
+                border-radius: 35px;
+                opacity: 0.9;
+                background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+                padding: 24px 43px 23px 43px;
+                background-color: #fff;
+                color: white;
+                border: none;
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 24px;
+            } 
+            .s-btn{
+                border-radius: 35px;
+                opacity: 0.9;
+                background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+                padding: 24px 43px 23px 43px;
+                background-color: #fff;
+                color: white;
+                border: none;
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 27px;    
+            }
+        }
+    }
+    .product__link{
+        // width: 427px;
+        // height: 28px;
+        margin-left: 153px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 400;
+        .bi{
+            margin-left: 6px;
+        }
+    }
+}
 
+@media(max-width:375px){
+    .product_list_father{
+        width: 375px;
+        overflow: hidden;
+    }
+    .product__link{
+        // width: 427px;
+        // height: 28px;
+        margin-left: 35px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        .bi{
+            margin-left: 6px;
+        }
+    }
 }

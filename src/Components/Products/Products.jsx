@@ -11,7 +11,9 @@ function Products() {
   return (
     <div className='Product'>
       <div className="container">
+        <div className="product_inner">
         <h2 className='product__tittle'>ПРОДУКЦИЯ</h2>
+        <div className="product_list_father">
         <ul className="product__list">
             <li className='product__list-item'>
                 <img className='product__first-img' src={hirurgiyaImg} alt="" />
@@ -44,6 +46,8 @@ function Products() {
                 <button className='si-btn'>Посмотреть все</button>
             </li>
         </ul>
+        </div>
+      </div>
         
         <Link className='product__link'>Перейти в каталог нашей продукции
         <i class="bi bi-arrow-right-circle"></i>
