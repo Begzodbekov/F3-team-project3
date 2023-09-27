@@ -1,36 +1,61 @@
-import React from 'react'
-import "./Uslugi.scss"
-import services1 from "../../assets/img/servic 1.png"
-import uslugiImg2 from "../../assets/img/uslugiImg2.png"
-import uslugiImg3 from "../../assets/img/uslugi3.png"
-
+import React from "react";
+import "./Uslugi.scss";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { dataUslugi } from "../../lib/DataUslugi";
 
 function Uslugi() {
   return (
-    <div className='Uslugi__con'>
-        <h1 className='frame__title1'>Услуги</h1>
-        <div className="frame__1">
-            <div className="item__1">
-                <img className='item__1__img__1' src={services1} alt="" />
-                <h3 className='item__1__text__1'>СЕРВИС ОБОРУДОВАНИЯ</h3>
-                <p className='item__1__text__2'>Компания предоставляет сервисное обслуживание по всем предоставляемым продуктам. У наших инженеров имеется опыт и сертификаты фирм производителей......</p>
-                <button className='item__1__btn__1'>Подробнее</button>
-            </div>
-            <div className="item__2">
-                <img className='item__2__img__1' src={uslugiImg2} alt="img" />
-                <h3 className='item__2__text__1'>РЕГИСТРАЦИИ</h3>
-                <p className='item__2__text__2'>Компания предоставляет сервисное обслуживание по всем предоставляемым продуктам. У наших инженеров имеется опыт и сертификаты фирм производителей......</p>
-                <button className='item__2__btn__1'>Подробнее</button>
-            </div>
-            <div className="item__3">
-                <img className='item__3__img__1' src={uslugiImg3} alt="" />
-                <h3 className='item__3__text__1'>СЕРВИС ОБОРУДОВАНИЯ</h3>
-                <p className='item__3__text__2'>Компания предоставляет сервисное обслуживание по всем предоставляемым продуктам. У наших инженеров имеется опыт и сертификаты фирм производителей......</p>
-                <button className='item__3__btn__1'>Подробнее</button>
-            </div>
-        </div>
+    <div className="container">
+      <div className="Uslugi__con">
+        <h1 className="frame__title1">Услуги</h1>
+        <ul className="frame__con">
+          <>
+            <Swiper pagination={true} modules={[Pagination]} className="swiper__1">
+              {dataUslugi?.map((item, index) => (
+                <SwiperSlide>
+                  <li className="frame__1" key={index}>
+                    <div className="item__1">
+                      <img
+                        className="item__1__img__1"
+                        src={item.img1}
+                        alt="ser"
+                      />
+                      <h4>{item.text1}</h4>
+                      <p>{item.text2}</p>
+                      <button className="item__1__btn__1">Подробнее</button>
+                    </div>
+                    <div className="item__1">
+                      <img
+                        className="item__1__img__1"
+                        src={item.img2}
+                        alt="ser"
+                      />
+                      <h4>{item.text3}</h4>
+                      <p>{item.text4}</p>
+                      <button className="item__1__btn__1">Подробнее</button>
+                    </div>
+                    <div className="item__1">
+                      <img
+                        className="item__1__img__1"
+                        src={item.img3}
+                        alt="ser"
+                      />
+                      <h4>{item.text5}</h4>
+                      <p>{item.text6}</p>
+                      <button className="item__1__btn__1">Подробнее</button>
+                    </div>
+                  </li>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </>
+        </ul>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Uslugi
+export default Uslugi;
