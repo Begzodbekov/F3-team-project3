@@ -17,6 +17,23 @@
 .frame__con{
     width: 1460px;
     height: 681px;
+
+    .swiper-slide img {
+        width: 394px;
+        height: 259px;
+     }
+     
+     .swiper-slide {
+         border-radius: 50px;
+         background: #FFF;
+         text-align: center;
+     }
+     
+     .swiper__1{
+         overflow: hidden;
+     }
+     
+
 }
 
 .frame__1 {
@@ -78,21 +95,6 @@
         border: none;
         margin-top: 62px;
     }
-}
-
-.swiper-slide img {
-   width: 394px;
-   height: 259px;
-}
-
-.swiper-slide {
-    border-radius: 50px;
-    background: #FFF;
-    text-align: center;
-}
-
-.swiper__1{
-    overflow: hidden;
 }
 
 

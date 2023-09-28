@@ -6,6 +6,7 @@ import Headerphone from '../../assets/img/header_phone.png'
 import Herolupa from '../../assets/img/hero_search_lupa.png'
 import Facebook from '../../assets/img/hero_facebook.png'
 import Russiaflug from '../../assets/img/header_russia_fag.png'
+import NavbarResponsive from '../../assets/img/header_navbar_responsive.png'
 import { Link } from 'react-router-dom'
 function Header() {
   const [language, setLanguage] = useState('Русский')
@@ -76,7 +77,10 @@ function Header() {
                                   </ul>
                                   <button type="button" class="btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false"></button>
                         </div>
-                      </li>                            
+                      </li>             
+                      <li className='hero_navbar_responsive'>
+                        <img src={NavbarResponsive} alt="" />  
+                      </li>               
                     </ul>
                   </nav>
                   <div className="nav_bottom">
