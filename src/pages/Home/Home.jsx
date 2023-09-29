@@ -16,10 +16,9 @@ function Home() {
       <Hero/>
       <Products/>
       <Novosti/>
-
-          <Uslugi/>
-          <Partner/>
-          <Footer/>
+      <Uslugi/>
+      <Partner/>
+      <Footer/>
 
 
     </div>
