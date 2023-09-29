@@ -304,7 +304,7 @@
     .nav_list{
         margin-left: 154px;
         transition: 500ms ease;
-        max-width: 1195px !important;
+        max-width: 694px !important;
         .nav_list_item{
             // max-width: 120px;
             display: block;
@@ -399,10 +399,27 @@
 
 @media screen and (max-width: 768px){
     .nav_list{
-
+        width: 500px;
+        .nav_list_item{
+            .nav_location{
+                margin-left: 216px;
+            }
+            .nav_search{
+                margin-left: 299px !important;
+                padding: 10px !important;
+            }
+            .nav_btnLanguage{
+                margin-left: -35px  !important ;
+            }
+        }
+        .nav_calll{
+            .header_phone{
+                margin-left: 55px !important;
+            }
+        }
         .hero_navbar_responsive{
             display:block !important;
-            margin-left: -170px;
+            margin-left: -205px;
         }
     }
     .nav_btnLanguage{
