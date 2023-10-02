@@ -27,6 +27,10 @@ function Header() {
   function Onlanguagechange(){
 
   }
+  const navBottom = useRef()
+  const Navbar = ()=>{
+    navBottom.current.classList.toggle('responsive_navbar')
+  }
   console.log(language);
           return (
             <div className='Header'>
@@ -78,13 +82,13 @@ function Header() {
                                   <button type="button" class="btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false"></button>
                         </div>
                       </li>             
-                      <li className='hero_navbar_responsive'>
-                        <img src={NavbarResponsive} alt="" />  
+                      <li  className='hero_navbar_responsive'>
+                        <img onClick={Navbar} src={NavbarResponsive} alt="" />  
                       </li>               
                     </ul>
                   </nav>
-                  <div className="nav_bottom">
-                    <ul className='nav_bottom_list'>
+                  <div ref={navBottom} className="nav_bottom">
+                    <ul  className='nav_bottom_list'>
                       <li className='nav_bottom_item1'><Link>МАГАЗИН</Link></li>
                       <li className='nav_bottom_itemO'> <span></span> <Link> О КОМПАНИИ </Link></li>
                       <li><Link>ПРОДУКЦИЯ</Link></li>
