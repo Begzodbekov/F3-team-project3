@@ -1,5 +1,6 @@
 .gl_header {
     background-color: #fff;
+
     .gl_text__1 {
         color: #0D4C93;
         font-family: Roboto;
@@ -9,9 +10,10 @@
         line-height: normal;
         text-align: center;
     }
+
     .gl_karta {
         display: flex;
-    
+
         .gl_karta1 {
             width: 392px;
             height: 570px;
@@ -20,79 +22,24 @@
             border: 2px solid #F6F6F6;
             opacity: 0.9;
             background: linear-gradient(180deg, #F8F8F8 0%, rgba(255, 255, 255, 0.00) 100%);
-        
-       
-        
-        h1 {
-            width: 312px;
-            color: #0D4C93;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            margin-top: 220px;
-        }
-        
-        h2 {
-            color: #0D4C93;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px;
-            /* 133.333% */
-        }
-        
-        p {
-            width: 327px;
-            height: 171px;
-            color: #363535;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            /* 171.429% */
-        } 
-    }
-        
-        .swiper-slide img {
-            width: 335px !important;
-            height: 251px !important;
-            border-radius: 55px;
-        
-        }
-        
-        
-        
-        .gl_karta2 {
-            width: 382px;
-            height: 570px;
-            flex-shrink: 0;
-            border-radius: 35px;
-            border: 2px solid #F6F6F6;
-            opacity: 0.9;
-            background: linear-gradient(180deg, #F8F8F8 0%, rgba(255, 255, 255, 0.00) 100%);
-        
-        
-        
+            padding-left: 31px;
+            padding-bottom: 355px;
+            padding-right: 16px;
+            margin-left: 78px;
+            padding: 20px;
+
             h1 {
                 width: 312px;
-                color: #00C9C9;
+                color: #0D4C93;
                 text-align: center;
                 font-family: Montserrat;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                margin-top: 220px;
-                text-decoration-line: underline;
+                margin-top: 120px;
             }
-        
+
             h2 {
                 color: #0D4C93;
                 text-align: center;
@@ -103,7 +50,7 @@
                 line-height: 24px;
                 /* 133.333% */
             }
-        
+
             p {
                 width: 327px;
                 height: 171px;
@@ -117,7 +64,69 @@
                 /* 171.429% */
             }
         }
-        
+
+        .swiper-slide img {
+            width: 335px !important;
+            height: 251px !important;
+            border-radius: 55px;
+            margin-top: -150px;
+            margin-left: 200px;
+            position: absolute;
+            z-index: 1;
+            margin-left: 110px;
+        }
+
+
+
+        .gl_karta2 {
+            width: 382px;
+            height: 570px;
+            flex-shrink: 0;
+            border-radius: 35px;
+            border: 2px solid #F6F6F6;
+            opacity: 0.9;
+            background: linear-gradient(180deg, #F8F8F8 0%, rgba(255, 255, 255, 0.00) 100%);
+            padding: 20px;
+
+
+
+            h1 {
+                width: 312px;
+                color: #00C9C9;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 120px;
+                text-decoration-line: underline;
+            }
+
+            h2 {
+                color: #0D4C93;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+
+            p {
+                width: 327px;
+                height: 171px;
+                color: #363535;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                /* 171.429% */
+            }
+        }
+
         .gl_karta3 {
             width: 382px;
             height: 570px;
@@ -126,96 +135,120 @@
             border: 2px solid #F6F6F6;
             opacity: 0.9;
             background: linear-gradient(180deg, #F8F8F8 0%, rgba(255, 255, 255, 0.00) 100%);
-        
-        
-        h1 {
-            width: 312px;
-            color: #0D4C93;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            margin-top: 200px;
-            line-height: normal;
-            margin-left: 20px;
+            padding: 20px;
+
+
+            h1 {
+                width: 312px;
+                color: #0D4C93;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                margin-top: 120px;
+                line-height: normal;
+
+            }
+
+            h2 {
+                color: #0D4C93;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+
+
+            }
+
+            p {
+                width: 327px;
+                height: 171px;
+                color: #363535;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+
+            }
         }
-        
-        h2 {
-            color: #0D4C93;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px;
-            margin-right: 50px;
-        
-        }
-        
-        p {
-            width: 327px;
-            height: 171px;
-            color: #363535;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            margin-left: 20px;
-        }  
-    }
-        
-        
+
+
         .swiper {
             width: 100%;
-            height: 795px;
-        
-        
+            height: 1975px !important;
+
+            .swiper-button-next {
+
+                margin-top: -618px !important;
+                margin-left: 20px !important;
+            }
+
+            .swiper-button-prev {
+                margin-top: -618px !important;
+                margin-left: 23px !important;
+            }
+
         }
-  
-        
+
+
         .swiper-slide {
             text-align: center;
             font-size: 18px;
             background: #fff;
-        
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        
+
         .swiper-slide img {
             display: block;
-            width: 100%;
-            height: 100%;
             object-fit: cover;
+
         }
-        
+
+        .gl_img_10 {
+            margin-left: 1px !important;
+            margin-top: -354px !important;
+        }
+
+        .gl_img_11 {
+            margin-left: 22px !important;
+        }
+
+        .gl_img_12 {
+            margin-left: 106px !important;
+        }
+
         .swiper-button-next::after {
             content: 'next' !important;
-            margin-top: 252px !important;
-            // background-color: black;
+            color: #fff;
         }
-        
+
         .swiper-button-prev::after {
             content: 'prev' !important;
-            margin-top: 252px !important;
-            margin-left: -20px;
+
+
+            color: #fff;
         }
-        
+
         .gl__button_1 {
+
             width: 270px;
             height: 50px;
             flex-shrink: 0;
             border-radius: 35px;
             opacity: 0.9;
             background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
-            
-        
+            border-color: #fff;
+
+
         }
-        
+
         .gl__button_2 {
             width: 270px;
             height: 50px;
@@ -223,10 +256,9 @@
             border-radius: 35px;
             opacity: 0.9;
             background: #00C9C9;
+            border-color: #F6F6F6;
         }
-    
+
     }
+
 }
-
-
-

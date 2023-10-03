@@ -5,56 +5,41 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { dataUslugi } from "../../lib/DataUslugi";
+import servic1 from "../../assets/img/servic1.png"
+import uslugi2 from "../../assets/img/uslugiImg2.png"
+import uslugi3 from "../../assets/img/uslugi3.png"
+import UslugiBlur from "../../assets/img/uslugiBlur.png"
+
+
+
 
 function Uslugi() {
   return (
     <div className="container">
-      <div className="Uslugi__con">
         <h1 className="frame__title1">Услуги</h1>
-        <ul className="frame__con">
+        <ul className="frame__1">
           <>
-            <Swiper pagination={true} modules={[Pagination]} className="swiper__1">
-              {dataUslugi?.map((item, index) => (
-                <SwiperSlide>
-                  <li className="frame__1" key={index}>
-                    <div className="item__1">
-                      <img
-                        className="item__1__img__1"
-                        src={item.img1}
-                        alt="ser"
-                      />
-                      <h4>{item.text1}</h4>
-                      <p>{item.text2}</p>
+          <Swiper
+          slidesPerView={3}
+          pagination={true} modules={[Pagination]}
+          className="uslugiswiper"
+>
+              {
+                dataUslugi?.map((item,index)=>(
+                  <SwiperSlide>
+                    <li key={index} className="item__1">
+                      <img className="frame__img" src={item.img} alt="" />
+                      <h4 className="item__1__text__1">{item.text1}</h4>
+                      <p className="item__1__text__2">{item.text}</p>
                       <button className="item__1__btn__1">Подробнее</button>
-                    </div>
-                    <div className="item__1">
-                      <img
-                        className="item__1__img__1"
-                        src={item.img2}
-                        alt="ser"
-                      />
-                      <h4>{item.text3}</h4>
-                      <p>{item.text4}</p>
-                      <button className="item__1__btn__1">Подробнее</button>
-                    </div>
-                    <div className="item__1">
-                      <img
-                        className="item__1__img__1"
-                        src={item.img3}
-                        alt="ser"
-                      />
-                      <h4>{item.text5}</h4>
-                      <p>{item.text6}</p>
-                      <button className="item__1__btn__1">Подробнее</button>
-                    </div>
-                  </li>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                    </li>
+                  </SwiperSlide>
+                ))
+              }
+          </Swiper>
           </>
         </ul>
       </div>
-    </div>
   );
 }
 
