@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Hero.scss'
 import Hero_background from '../../assets/img/hero_background.png'
+import Hozirchalik from '../../assets/img/uslugiImg2.png'
 import { HeroData, herodata } from '../../lib/HeroData'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -34,7 +35,7 @@ function Hero() {
                         }
                         </Swiper>
                     </>
-
+                    
                     </ul>
                 </div>
             </div>

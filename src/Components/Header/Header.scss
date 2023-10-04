@@ -5,13 +5,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1575px;
+            // max-width: 1575px;
+            flex-wrap: wrap;
             margin-top: 50px;
             .nav_list_item{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 220px;
+                width: 205px;
                 .nav_location{
                     border-radius: 25px;
                     background-color: white;
@@ -189,8 +190,6 @@
             a{
                 color: #00C9C9;
             }
-            font-family: Roboto;
-            font-size: 20px;
             span{
                 padding: 4px !important;
                 margin-left: 162px !important;
@@ -271,24 +270,19 @@
             .nav_bottom_item6{
                 border-radius: 0px 35px 35px 0px;
             }
-            li{
-                padding: 10px 30px 10px 30px !important;
-                background: #FFF;
-                font-size: 17px !important;
-            a{
-                color: #0D4C93;
+                li{
+                    padding: 10px 30px 10px 30px !important;
+                    background: #FFF;
+                    font-size: 17px !important;
+                a{
+                    color: #0D4C93;
+                }
+
             }
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
         .nav_bottom_itemO{
             a{
                 color: #00C9C9;
             }
-            font-family: Roboto;
-            font-size: 20px;
             span{
                 padding: 4px !important;
                 margin-left: 162px !important;
@@ -300,13 +294,59 @@
 }
 
 @media screen and (max-width: 1250px){
-
+        .responsive_navbar{
+            display: block !important;
+            margin-left: 502px;
+            margin-top: 0px !important;
+            position: relative;
+            .nav_bottom_list{
+                flex-direction: column;
+                background: #fff;
+                border-radius: 10px;
+                height: 276px;
+                padding: 10px;
+                width: 400px;
+                position: absolute;
+                z-index: 99;
+                opacity: 1 !important;
+                li{
+                    background: none !important;
+                    font-size: 17px !important;
+                 a{
+                     color: #0D4C93;
+                 }
+                
+                }
+                :nth-child(3){
+                    margin-left: -214px;
+                }
+                :nth-child(4){
+                    margin-left: -250px;
+                }
+                :nth-child(5){
+                    margin-left: -151px;
+                }
+            }
+            .nav_bottom_item1{
+                margin-left: -244px !important;
+            }
+            .nav_bottom_itemO{
+                margin-left: -206px !important;
+            }
+            .nav_bottom_item6{
+                margin-left: -173px !important;
+            }
+    }
     .nav_list{
         margin-left: 154px;
         transition: 500ms ease;
-        max-width: 694px !important;
+        // max-width: 694px !important;
+        max-width: 1195px !important;
+        .hero_navbar_responsive{
+            display:block !important;
+            margin-left: -70px;
+        }
         .nav_list_item{
-            // max-width: 120px;
             display: block;
             .nav_facebook{
                 display: none !important;
@@ -316,9 +356,6 @@
                 height: 50px;
                 padding: 0px 10px 0px 8px !important;
                 transition: 500ms ease;
-                // .nav_btn_languagename{
-                //     display: none;
-                // }
             }
             .nav_search{
                 margin-left: 321px  !important;
@@ -355,61 +392,25 @@
             
         }
     }
+
     .nav_bottom{
-        display: none;
-    //     margin-left: 190px;
-    //     transition: 500ms ease;
-    //     .nav_bottom_list{
-    //         width: 1085px;
-    //         transition: 500ms;
-    //         .nav_bottom_item1{
-    //             padding: 10px 30px 10px 30px !important;
-                
-    //         }
-    //         .nav_bottom_item6{
-    //             border-radius: 0px 35px 35px 0px;
-    //         }
-    //         li{
-    //             padding: 10px 30px 10px 30px !important;
-    //             background: #FFF;
-    //             font-size: 17px !important;
-    //         a{
-    //             color: #0D4C93;
-    //         }
-    //         font-family: Roboto;
-    //         font-style: normal;
-    //         font-weight: 400;
-    //         line-height: normal;
-    //     }
-    //     .nav_bottom_itemO{
-    //         a{
-    //             color: #00C9C9;
-    //         }
-    //         font-family: Roboto;
-    //         font-size: 20px;
-    //         span{
-    //             padding: 4px !important;
-    //             margin-left: 162px !important;
-    //             margin-top: -4px !important;
-    //         }
-    //     }
-    // }
+        display: none ;
     }
 }
 
 @media screen and (max-width: 768px){
     .nav_list{
-        width: 500px;
+        // width: 500px;
         .nav_list_item{
             .nav_location{
                 margin-left: 216px;
             }
             .nav_search{
-                margin-left: 299px !important;
+                margin-left: 269px !important;
                 padding: 10px !important;
             }
             .nav_btnLanguage{
-                margin-left: -35px  !important ;
+                margin-left: -105px !important ;
             }
         }
         .nav_calll{
@@ -419,7 +420,7 @@
         }
         .hero_navbar_responsive{
             display:block !important;
-            margin-left: -205px;
+            margin-left: -218px;
         }
     }
     .nav_btnLanguage{
@@ -429,6 +430,16 @@
         transition: 500ms ease;
         .nav_btn_languagename{
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .nav_list{
+        .nav_list_item{
+            .nav_location{
+                display: none;
+            }
         }
     }
 }
