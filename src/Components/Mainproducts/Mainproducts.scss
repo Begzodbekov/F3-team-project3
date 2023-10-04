@@ -28,23 +28,62 @@
         box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
         border-radius: 35px;
         border: none;
-        // margin-bottom: 210px;
+        padding-left: 48px;
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 10px;
     }
     .btn1::after{
         content: icon;
-        margin-left: 250px;
+        margin-left: 180px;
+        margin-right: 40px;
         font-size: 25px;
-        margin-top: 20px;
+        margin-top: 23px;
+    }
+    .btn2{
+        width: 342px;
+        height: 60px;
+        background: #FFF;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 35px;
+        border: none;
+        padding-left: 15px;
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .btn2::after{
+        content: icon;
+        margin-left: 130px;
+        margin-right: 10px;
+        font-size: 25px;
+        margin-top: 23px;
+    }
+    .btn3{
+        width: 342px;
+        height: 60px;
+        background: #FFF;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 35px;
+        border: none;
+        padding-left: 18px;
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .btn3::after{
+        content: icon;
+        margin-left: 130px;
+        font-size: 25px;
+        margin-top: 23px;
+        // padding-right: 10px;
     }
     .filt__prod{
         color: #000;
         font-size: 28px;
         font-weight: 400;
-        // padding: 33px 12px 34px 32px; 
         padding-top: 25px;
         padding-left: 47px;
     }
-    .mproduct__list{
+    .mproduct__btn-list{
         display: flex;
         margin-left: 122px;
         margin-top: -60px;     
@@ -53,4 +92,45 @@
         }
     }
     
+}
+
+
+.mproduct__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    li{
+        width: 413px;
+        height: 439px;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0.00) 100%);
+    }
+    h1{
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+    button{
+        color: white;
+        background-color: #fff;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        padding: 24px 59px 23px 58px;
+        border: none;
+        margin-left: 72px;
+        margin-top: 27px;
+        font-size: 20px;
+    }
+    img{
+        width: 225px;
+        height: 157px;
+        margin: 44px 94px 0px 94px;
+        object-fit: contain;
+    }
 }
