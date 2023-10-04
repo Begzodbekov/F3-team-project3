@@ -12,13 +12,13 @@ function Mainproducts() {
             <p className='filt__prod'>Фильтр:</p>
             <ul className='mproduct__btn-list'>
               <li className='p-list__item'>
-              <button type="button" class="btn1 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Бренд</button>
+              <button type="button" class="btn1 btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Бренд</button>
               </li>
               <li  className='p-list__item'>  
-              <button type="button" class="btn2 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Категория</button>
+              <button type="button" class="btn2 btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Категория</button>
               </li>
               <li className='p-list__item'>
-              <button type="button" class="btn3 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button>
+              <button type="button" class="btn3 btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button>
               </li>
             </ul>
         </nav>
