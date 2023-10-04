@@ -4,3 +4,27 @@
   height: 500px;
   border: solid 1px grey;
 }
+
+.left_box{
+  display: flex;
+  flex-direction: column;
+}
+
+.left_top_box{
+  display: flex;
+  flex-direction: column;
+}
+
+.a_inner{
+  display: flex;
+  align-self: center;
+}
+
+.column_a{
+  display: flex;
+  align-items: center;
+}
+.column_b{
+  display: flex;
+  align-items: center;
+}
