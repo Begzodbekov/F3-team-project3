@@ -10,9 +10,6 @@ import uslugi2 from "../../assets/img/uslugiImg2.png"
 import uslugi3 from "../../assets/img/uslugi3.png"
 import UslugiBlur from "../../assets/img/uslugiBlur.png"
 
-
-
-
 function Uslugi() {
   const [vWidth, setVWidth] = useState(window.innerWidth)
 
@@ -25,10 +22,10 @@ function Uslugi() {
         <ul className="frame__1">
           <>
           <Swiper
-          slidesPerView={vWidth >= 1500 ? 3 : 2}
+          slidesPerView={vWidth >= 1246 ? 3 : 2 && vWidth >= 662 ? 2 : 1}
           pagination={true} modules={[Pagination]}
           className="uslugiswiper"
->
+          >
               {
                 dataUslugi?.map((item,index)=>(
                   <SwiperSlide>

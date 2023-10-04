@@ -25,7 +25,7 @@ function Partner() {
   return (
     <div className="container">
       <h1 className="text_one">ПАРТНЕРЫ</h1>
-      <div className="partner_bigbox">
+      <div className="partner_bigbox">  
         <Swiper
           navigation={true}
           slidesPerView={4}
