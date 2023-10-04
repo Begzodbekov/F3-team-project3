@@ -25,7 +25,7 @@
             padding-left: 31px;
             padding-bottom: 355px;
             padding-right: 16px;
-            margin-left: 78px;
+            margin-left: 10px;
             padding: 20px;
 
             h1 {
@@ -186,11 +186,16 @@
 
                 margin-top: -618px !important;
                 margin-left: 20px !important;
+                padding: 20px 24px;
+                left: 1277px;
             }
 
             .swiper-button-prev {
                 margin-top: -618px !important;
                 margin-left: 23px !important;
+                padding: 20px 24px;
+                left: -23px;
+                
             }
 
         }
@@ -227,10 +232,12 @@
         .swiper-button-next::after {
             content: 'next' !important;
             color: #fff;
+            font-size: 14px !important;
         }
 
         .swiper-button-prev::after {
             content: 'prev' !important;
+            font-size: 14px !important;
 
 
             color: #fff;
@@ -261,4 +268,10 @@
 
     }
 
+}
+.swiper-wrapper{
+    width: 1440px !important;
+}
+.Novosti__link{
+    background-color: #363535;
 }
