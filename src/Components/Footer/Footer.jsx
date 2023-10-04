@@ -7,30 +7,41 @@ import Logotip from "../../assets/img/logotip.png";
 
 function Footer() {
   return (
-    <div className="container">
-      <div className="background_img">
+    <div className="background_img">
+      <div className="container">
         <div className="left_box">
           <div className="left_top_box">
-
             <div className="column_a">
-            <p className="first_text">Контакты</p>
-              <div className="a_inner">
-                <img src={Icona} alt="" className="footer_icon" />
-                <p className="footer_text">
-                  г.Ташкент, Чиланзар <br /> 10 квартал, дом 3/1
-                </p>
+              <div className="relate_box_b">
+                <img src={Logotip} alt="" className="footer_img" />
               </div>
-              <div className="a_inner">
-                <img src={Iconb} alt="" className="footer_icon" />
-                <p className="footer_text">
-                  +998 71 276-62-53 <br /> +998 71 276-62-54
-                </p>
+              <p className="first_text">Контакты</p>
+              <div className="first_text_box_in">
+                <div className="a_inner">
+                  <div className="footer_icon">
+                    <img src={Icona} alt="" />
+                  </div>
+                  <p className="footer_text">
+                    г.Ташкент, Чиланзар <br /> 10 квартал, дом 3/1
+                  </p>
+                </div>
+                <div className="a_inner">
+                  <div className="footer_icon">
+                    <img src={Iconc} alt="" />
+                  </div>
+                  <p className="footer_text">
+                    +998 71 276-62-53 <br /> +998 71 276-62-54
+                  </p>
+                </div>
               </div>
             </div>
 
             <div className="column_b">
+              <div className="boxive"></div>
               <div className="a_inner">
-                <img src={Iconc} alt="" className="footer_icon" />
+                <div className="footer_icon">
+                  <img src={Iconb} alt="" />
+                </div>
                 <p className="footer_text">info@medol.uz </p>
               </div>
               <div className="b_inner">
@@ -40,7 +51,9 @@ function Footer() {
           </div>
 
           <div className="left_bottom_box">
-            <img src={Logotip} alt="" className="footer_img" />
+            <div className="relate_box_a">
+              <img src={Logotip} alt="" className="footer_img" />
+            </div>
             <div className="max_text">
               Наша цель – построить прозрачный, долгосрочный бизнес, приносить
               огромную пользу населению, путем решения глобальных вопросов.
