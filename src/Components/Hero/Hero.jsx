@@ -22,7 +22,7 @@ function Hero() {
                                 <SwiperSlide>
                                 <li className="hero_left" key={index}>
                                     <div className="hero_left_top">
-                                        <h1>{item.name} <span>ABL800 FLEX</span></h1>
+                                        <h1>{item.name} </h1>
                                         <p>{item.title}</p>
                                         <button>Подробнее</button>
                                     </div>

@@ -113,6 +113,11 @@
     }
 }
 }
+@media screen and (max-width: 1670px){
+  .hero_slider_father{
+    width: 1870px !important;
+  }
+}
 @media screen and (max-width: 1560px){
   .hero_inner {
     .hero_slider_father{
@@ -150,7 +155,7 @@
 @media screen and (max-width: 1400px){
   .hero_inner {
     .hero_slider_father{
-      max-width: 1722px ;
+      max-width: 1687px ;
       .hero_slider {
         margin-left: 300px;
         transition: 300ms;
@@ -200,7 +205,7 @@
   }
   .hero_inner {
     .hero_slider_father{
-      max-width: 1227px ;
+      max-width: 1125px ;
       .hero_slider {
 
         margin-left: -65px;

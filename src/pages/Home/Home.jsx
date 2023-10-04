@@ -9,6 +9,7 @@ import Uslugi from '../../Components/Uslugi/Uslugi'
 import Products from '../../Components/Products/Products'
 import Hero from '../../Components/Hero/Hero'
 import Footer from '../../Components/Footer/Footer'
+import Company from '../../Components/Company/Company'
 
 function Home() {
   return (
@@ -16,10 +17,10 @@ function Home() {
       <Hero/>
       <Products/>
       <Novosti/>
-
-          <Uslugi/>
-          <Partner/>
-          <Footer/>
+      <Uslugi/>
+      <Company/>
+      <Partner/>
+      <Footer/>
 
 
     </div>
