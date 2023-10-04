@@ -18,16 +18,16 @@
 .frame__1 {
     background: linear-gradient(180deg, #FAFAFA 0%, rgba(250, 250, 250, 0) 100%);
     background-repeat: no-repeat;
-    width: 1895px;
-    height: 681px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: -271px !important;
+    // margin-left: -271px !important;
     background-image: url(../../assets/img/uslugiBlur.png);
-
+    .swiper{
+        height: 700px !important;
+    }
     .swiper-slide img {
-        width: 394px;
+        width: 100%;
         height: 259px;
     }
 
@@ -42,21 +42,12 @@
     }
 
     .swiper-backface-hidden .swiper-slide {
-        width: 10px;
-        height: 500px;
-        transform: translateZ(0);
-        backface-visibility: hidden;
+
         background: transparent;
     }
 
-    .swiper-wrapper {
-        margin-left: -213px;
-    }
 
-    img {
-        border-radius: 10px 10px 10px;
-        margin-left: -4px;
-    }
+    
 }
 
 .item__1 {
@@ -66,10 +57,12 @@
     width: 388px;
     height: 491px;
     flex-shrink: 0;
-    margin-left: 280px;
     text-align: center;
-    margin-top: -20px;
-
+    img{
+        border-top-left-radius:50px;
+        border-top-right-radius:50px;
+    }
+ 
     .item__1__text__1 {
         color: #0D4C93;
         font-family: Roboto;
@@ -113,7 +106,6 @@
     .item__1 {
         width: 314px;
         height: 511px;
-        margin-left: -100px;
         .item__1__text__1 {
             color: #0D4C93;
             text-align: center;

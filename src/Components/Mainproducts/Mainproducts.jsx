@@ -12,15 +12,46 @@ function Mainproducts() {
             <p className='filt__prod'>Фильтр:</p>
             <ul className='mproduct__btn-list'>
               <li className='p-list__item'>
-              <button type="button" class="btn1 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Бренд</button>
+              {/* <button type="button" class="btn1 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Бренд</button> */}
+              <div class="btn-group nav_btnLanguage" role="group">
+                              
+                              <p className='nav_btn_languagename'></p>
+                                <ul class="dropdown-menu">
+                                  <li><a  class="dropdown-item" href="#">Русский</a></li>
+                                  <li><a  class="dropdown-item" href="#">Uzbek</a></li>
+                                  <li><a  class="dropdown-item" href="#">English</a></li>
+                                </ul>
+                                <button type="button" class="btn1 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Бренд</button>
+                      </div>
               </li>
               <li  className='p-list__item'>  
-              <button type="button" class="btn2 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Категория</button>
+              {/* <button type="button" class="btn2 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Категория</button> */}
+              <div class="btn-group nav_btnLanguage" role="group">
+                              
+                              <p className='nav_btn_languagename'></p>
+                                <ul class="dropdown-menu">
+                                  <li><a  class="dropdown-item" href="#">Русский</a></li>
+                                  <li><a  class="dropdown-item" href="#">Uzbek</a></li>
+                                  <li><a  class="dropdown-item" href="#">English</a></li>
+                                </ul>
+                                <button type="button" class="btn2 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Категория</button>
+                      </div>
               </li>
               <li className='p-list__item'>
-              <button type="button" class="btn3 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button>
+              {/* <button type="button" class="btn3 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button> */}
+              <div class="btn-group nav_btnLanguage" role="group">
+                              
+                              <p className='nav_btn_languagename'></p>
+                                <ul class="dropdown-menu">
+                                  <li><a  class="dropdown-item" href="#">Русский</a></li>
+                                  <li><a  class="dropdown-item" href="#">Uzbek</a></li>
+                                  <li><a  class="dropdown-item" href="#">English</a></li>
+                                </ul>
+                                <button type="button" class="btn3 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button>
+                      </div>
               </li>
             </ul>
+            
         </nav>
         <ul className='mproduct__list'>
         {
