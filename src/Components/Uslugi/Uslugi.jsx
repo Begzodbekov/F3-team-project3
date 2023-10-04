@@ -23,7 +23,7 @@ function Uslugi() {
           slidesPerView={3}
           pagination={true} modules={[Pagination]}
           className="uslugiswiper"
->
+          >
               {
                 dataUslugi?.map((item,index)=>(
                   <SwiperSlide>

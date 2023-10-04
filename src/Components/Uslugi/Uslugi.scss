@@ -147,12 +147,13 @@
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .pagination {
-        /* Стили для планшетов */
+        .frame__1{
+
+        }
     }
 }
 
 @media (min-width: 1025px) {
     .pagination {
-        /* Стили для настольных компьютеров */
     }
 }
