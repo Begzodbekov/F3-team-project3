@@ -32,6 +32,7 @@ function Header() {
     navBottom.current.classList.toggle('responsive_navbar')
   }
   console.log(language);
+  const [active, setActive] = useState(0)
           return (
             <div className='Header'>
               <div className="container">
@@ -40,7 +41,9 @@ function Header() {
                     <ul className='nav_list'>
                       <li className='nav_list_item'>
                               <span className='nav_location'>
-                                <img src={Locationimg} alt="" />
+                                <a href="">
+                                  <img src={Locationimg} alt="" />
+                                </a>
                               </span>
                               <span className='nav_list_item_address'>
                                 <p> г.Ташкент, Чиланзар</p>
@@ -48,23 +51,31 @@ function Header() {
                               </span>
                       </li>
                       <li className='nav_list_item nav_calll'>
-                                <img className='header_phone' src={Headerphone} alt="" />
+                        <a href="">
+                             <img className='header_phone' src={Headerphone} alt="" />
+                        </a>
                                 <span className='nav_list_item_phone' >
                                   <p> +998 71 276-62-53</p>
                                   <p>+998 71 276-62-54</p>  
                                 </span>         
                       </li>
                       <li className='nav_list_item header_logo'>
-                        <img src={logo} alt="" />
+                        <a href="">
+                          <img src={logo} alt="" />
+                        </a>
                       </li>
                       <li className='nav_list_item'>
                                 <span className='nav_search'>
-                                  <img src={Herolupa} alt="" />
+                                  <a href="">
+                                    <img src={Herolupa} alt="" />
+                                  </a>
                                 </span>
                       </li>
                       <li className='nav_list_item '>
                                 <span className='nav_facebook'>
+                                  <a href="">
                                   <img src={Facebook} alt="" />
+                                  </a>
                                   <p>
                                              Мы на Facebook
                                   </p>
@@ -89,7 +100,7 @@ function Header() {
                   </nav>
                   <div ref={navBottom} className="nav_bottom">
                     <ul  className='nav_bottom_list'>
-                      <li className='nav_bottom_item1'><Link>МАГАЗИН</Link></li>
+                      <li onClick={()=> setActive(0)} className={active == 0 ?'nav_bottom_item1':'nav_bottom_item1'}><Link>МАГАЗИН</Link></li>
                       <li className='nav_bottom_itemO'> <span></span> <Link> О КОМПАНИИ </Link></li>
                       <li><Link>ПРОДУКЦИЯ</Link></li>
                       <li> <Link>УСЛУГИ</Link></li>
