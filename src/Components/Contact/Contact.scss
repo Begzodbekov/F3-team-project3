@@ -1,0 +1,65 @@
+.contact_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    h2{
+        color:#0D4C93;
+    }
+    p{
+        color: #00C9C9;
+        span{
+            color: #000;
+        }
+    }
+}
+
+.contact_tashkent{
+    display: flex;
+    margin-top: 50px;
+  
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 511px;
+    height: 183px;
+    top: 532px;
+     left: 267px;
+     margin-top: 70px;
+     h3{
+        width: 100%;
+        margin-bottom: 70px;
+     }
+     div{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        i{
+            margin-bottom: 15px;
+            font-size: 17px;
+            padding: 10px;
+            margin-right: 10px;
+            color: #0D4C93;
+
+        }
+        button{
+            margin-bottom: 10px;
+            margin-left: 75px;
+            border: none;
+            background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+            padding: 6px;
+            border-radius: 15px;
+            letter-spacing: 2px;
+}
+     }
+
+}
+.map{
+    width: 777px;
+    height: 403px;
+    top: 435px;
+    left: 863px;
+    border-radius: 35px;
+
+}

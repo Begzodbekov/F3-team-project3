@@ -37,11 +37,11 @@ function ServicesContent() {
             <img src={img4} alt="" />
             <p>Инсталляция и пуско-наладочные работы медицинского оборудования</p>
           </div>
-          <div className="content">
+          <div className="content on">
             <img src={img5} alt="" />
             <p>Обучение медицинского персонала работе с медицинским оборудованием</p>
           </div>
-          <div className="content">
+          <div className="content on">
             <img src={img6} alt="" />
             <p>Ремонт медицинского оборудования Консультация по медицинскому оборудованию</p>
           </div>
