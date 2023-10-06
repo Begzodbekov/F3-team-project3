@@ -7,9 +7,10 @@ import Herolupa from '../../assets/img/hero_search_lupa.png'
 import Facebook from '../../assets/img/hero_facebook.png'
 import Russiaflug from '../../assets/img/header_russia_fag.png'
 import NavbarResponsive from '../../assets/img/header_navbar_responsive.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 function Header() {
   const [language, setLanguage] = useState('Русский')
+  const location = useLocation().pathname
   const uzb = useRef()
   let languagearray = []
   // console.log(languagearray);
@@ -38,9 +39,9 @@ function Header() {
     Searchinp.current.classList.toggle('nav_serch_inp')
   }
   console.log(language);
-  const [active, setActive] = useState(0)
           return (
-            <div className='Header'>
+            <div className={location != '/'? 'Headers': 'Header'}>
+
               <div className="container">
                 <div className="nav_inner">
                   <nav className='nav'>
@@ -106,12 +107,12 @@ function Header() {
                   </nav>
                   <div ref={navBottom} className="nav_bottom">
                     <ul  className='nav_bottom_list'>
-                      <li  className='nav_bottom_item1'><Link onClick={()=> setActive(0)} className={active == 0 ?'nav_bottom_a2':null}>МАГАЗИН</Link></li>
-                      <li className='nav_bottom_itemO'> <Link onClick={()=> setActive(1)} className={active == 1 ?'nav_bottom_a2':null}> О КОМПАНИИ </Link></li>
-                      <li><Link onClick={()=> setActive(2)} className={active == 2 ?'nav_bottom_a2':null}>ПРОДУКЦИЯ</Link></li>
-                      <li> <Link onClick={()=> setActive(3)} className={active == 3 ?'nav_bottom_a2':null}>УСЛУГИ</Link></li>
-                      <li><Link onClick={()=> setActive(4)} className={active == 4 ?'nav_bottom_a2':null}>АКЦИИ И НОВОСТИ </Link></li>
-                      <li className='nav_bottom_item6'><Link onClick={()=> setActive(5)} className={active == 5 ?'nav_bottom_a2':null}>ОБРАТНАЯ СВЯЗЬ</Link></li>
+                      <li  className='nav_bottom_item1'><Link to={'/'}  className={location == '/' ?'nav_bottom_a2':null}>МАГАЗИН</Link></li>
+                      <li className='nav_bottom_itemO'> <Link  className={location == '/company' ?'nav_bottom_a2':null}> О КОМПАНИИ </Link></li>
+                      <li><Link to='/mahsulot' className={location == '/mahsulot' ?'nav_bottom_a2':null}>ПРОДУКЦИЯ</Link></li>
+                      <li> <Link to='/services' className={location == '/services' ?'nav_bottom_a2':null}>УСЛУГИ</Link></li>
+                      <li> <Link className={location == '/news' ?'nav_bottom_a2':null}>АКЦИИ И НОВОСТИ </Link></li>
+                      <li className='nav_bottom_item6'><Link className={location == '/aloqa' ?'nav_bottom_a2':null}>ОБРАТНАЯ СВЯЗЬ</Link></li>
                     </ul>
                   </div>
                 </div>

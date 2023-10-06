@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <div className='Hero'>
@@ -24,7 +25,7 @@ function Hero() {
                                     <div className="hero_left_top">
                                         <h1>{item.name} </h1>
                                         <p>{item.title}</p>
-                                        <button>Подробнее</button>
+                                        <button><Link to={"/tavar"}>Подробнее</Link></button>
                                     </div>
                                     <div className="hero_right">
                                         <img src={item.img} alt="" />
