@@ -6,18 +6,17 @@ import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
 import Mahsulot from "./pages/Mahsulot/Mahsulot";
 import Tavar from "./pages/Tavar/Tavar";
+import Services from "./pages/Services/Services";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/mahsulot" element={<Mahsulot />} />
-
-        <Route path="/tavar" element={<Tavar />} />
-
-        {/* <Route path="/services" element={<Services />} /> */}
+        <Route path='/' element={<Home/>}/>
+        <Route path='/mahsulot' element={<Mahsulot/>}/>
+        <Route path='/tavar' element={<Tavar/>}/>
+        <Route path='services'element={<Services/>}/>
       </Routes>
     </div>
   );
