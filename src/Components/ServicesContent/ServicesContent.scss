@@ -19,14 +19,16 @@
     justify-content: center;
     margin: 50px;
     .content{
-        width: 400px;
+        width: 320px;
         height: 332px;
         top: 862px;
         left: 1209px;
         border-radius: 35px;
         align-items: center;
+        margin: 25px;
+        background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
         img{
-            margin-left: 50px;
+           margin-left: 60px;
         }
         p{
             text-align: center;
@@ -35,7 +37,16 @@
     }
 }
 .off{
+    p{
+        margin-top: 50px;
+    }
     img{
-        margin-bottom: 65px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+}
+.on{
+    p{
+        margin-top: 50px;
     }
 }
