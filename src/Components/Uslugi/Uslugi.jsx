@@ -1,4 +1,4 @@
-import React from "react";
+import React, {  useState } from "react";
 import "./Uslugi.scss";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,20 +10,22 @@ import uslugi2 from "../../assets/img/uslugiImg2.png"
 import uslugi3 from "../../assets/img/uslugi3.png"
 import UslugiBlur from "../../assets/img/uslugiBlur.png"
 
-
-
-
 function Uslugi() {
+  const [vWidth, setVWidth] = useState(window.innerWidth)
+
+  window.addEventListener('resize', ()=>{
+    setVWidth(window.innerWidth)
+  })
   return (
     <div className="container">
         <h1 className="frame__title1">Услуги</h1>
         <ul className="frame__1">
           <>
           <Swiper
-          slidesPerView={3}
+          slidesPerView={vWidth >= 1246 ? 3 : 2 && vWidth >= 662 ? 2 : 1}
           pagination={true} modules={[Pagination]}
           className="uslugiswiper"
->
+          >
               {
                 dataUslugi?.map((item,index)=>(
                   <SwiperSlide>

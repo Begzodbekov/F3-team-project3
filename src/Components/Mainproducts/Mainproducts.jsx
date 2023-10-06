@@ -21,6 +21,7 @@ function Mainproducts() {
               <button type="button" class="btn3 btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button>
               </li>
             </ul>
+            
         </nav>
         <ul className='mproduct__list'>
           {
