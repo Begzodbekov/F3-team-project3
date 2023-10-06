@@ -65,26 +65,39 @@ function Footer() {
 
           <div className="right_box">
             <div className="column_text">
-              <p className="text_footer_bold">О компании</p>
               <div className="text_footer_hack">
-                История <br />
-                Партнеры <br />
-                Вакансии
+                <ul className="foot_text_mine">
+                  <p className="text_footer_bold">О<i>.</i>компании</p>
+                  <li>История</li>
+                  <li>Партнеры</li>
+                  <li>Вакансии</li>
+                </ul>
               </div>
             </div>
             <div className="column_text">
-              <p className="text_footer_bold">Продукция</p>
               <div className="text_footer_hack">
-                Эндоваскулярная <br /> хирургия <br /> Аритмология <br />
-                Кардиохирургия <br /> Лабораторная диагностика <br /> Хирургия
-                <br /> Эндоурология <br /> Нейрохирургия <br /> Анестезиология и
-                реанимация <br /> Диабет
+                <ul className="foot_text_mine">
+                  <p className="text_footer_bold">Продукция</p>
+                  <li>Эндоваскулярна хирургия</li>
+                  <li>Аритмология</li>
+                  <li>Кардиохирургия</li>
+                  <li>Лабораторная диагностика</li>
+                  <li>Хирургия</li>
+                  <li>Эндоурология</li>
+                  <li>Нейрохирургия</li>
+                  <li>Анестезиология и реанимация</li>
+                  <li>Диабет</li>
+                </ul>
               </div>
             </div>
             <div className="column_text">
-              <p className="text_footer_bold">Услуги</p>
               <div className="text_footer_hack">
-                Сервис <br /> Регистрации <br /> Услуги логистики
+                <ul className="foot_text_mine">
+                  <p className="text_footer_bold">Услуги</p>
+                  <li>Сервис</li>
+                  <li>Регистрации</li>
+                  <li>Услуги логистики</li>
+                </ul>
               </div>
             </div>
           </div>
