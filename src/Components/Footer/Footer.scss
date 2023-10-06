@@ -1,5 +1,6 @@
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 2s ease;
 }
 
 .background_img {
@@ -8,6 +9,11 @@
   height: auto;
   border: solid 1px grey;
   padding: 50px 0px;
+}
+
+.footer_big_box {
+  display: flex;
+  gap: 30px;
 }
 
 .left_box {
@@ -72,7 +78,8 @@
   border-radius: 50%;
   background-color: #fff;
 }
-.b_inner{
+
+.b_inner {
 
   .btn {
     padding: 10px 30px;
@@ -116,8 +123,54 @@
   letter-spacing: 0.04em;
   color: #585858;
 }
-.relate_box_b{
+
+.relate_box_b {
   display: none;
+}
+
+
+.right_box {
+  display: flex;
+  gap: 10px;
+
+  .foot_text_mine {
+    .text_footer_bold {
+      color: #595959;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 1.04px;
+
+      i {
+        opacity: 0;
+      }
+    }
+
+    li {
+      color: #595959;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 0.64px;
+      cursor: pointer;
+
+      &:hover {
+        color: #00C9C9;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0.64px;
+        text-decoration-line: underline;
+      }
+    }
+  }
+
+
+
+
 }
 
 
@@ -134,7 +187,11 @@
 
 
 
-
+@media screen and (max-width:1200px){
+  .right_box{
+    display: none;
+  }
+}
 
 @media screen and (max-width:740px) {
   .column_a {
@@ -148,10 +205,8 @@
   .column_b {
     margin-top: 30px;
     gap: 20px;
-    // display: flex;
-    // align-items: start;
-    // justify-content: start;
-    // flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .first_text_box_in {
@@ -167,19 +222,26 @@
 }
 
 @media screen and (max-width:712px) {
-  .relate_box_a{
+  .relate_box_a {
     display: none;
   }
-  .relate_box_b{
+
+  .relate_box_b {
     display: block;
   }
-  .max_text{
-    margin-top: -20px;
-  }
-}
 
-@media screen and (max-width:625px) {
+  .max_text {
+    margin-top: -20px;
+    width: 100%;
+  }
   .boxive {
     display: none;
   }
+  .column_a{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
 }
+
