@@ -37,10 +37,12 @@ function Analyzer() {
                         {item.manufacturer}
                    </span>
                   </span>
-<button className="bottom__btn">
-  <Link className="bottom"  to={`/author/${item.id}`}>Подробнее</Link>
+<span className="span__btn">
 
-</button>
+  <Link className="bottom"  to={`/tovarD/${item.id}`}>Подробнее</Link>
+</span>
+
+
                 </li>
               ))}
             </ul>

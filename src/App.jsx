@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import Mahsulot from "./pages/Mahsulot/Mahsulot";
 import Tavar from "./pages/Tavar/Tavar";
 import Services from "./pages/Services/Services";
+import TovarD from "./pages/Tovar__D/TovarD";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/mahsulot' element={<Mahsulot/>}/>
         <Route path='/tavar' element={<Tavar/>}/>
         <Route path='services'element={<Services/>}/>
+        <Route path='/tovarD/:slug'element={<TovarD/>}/>
       </Routes>
     </div>
   );
