@@ -31,6 +31,12 @@ function Header() {
   const Navbar = ()=>{
     navBottom.current.classList.toggle('responsive_navbar')
   }
+  const Searchref = useRef()
+  const Searchinp = useRef()
+  const search = ()=>{
+    Searchref.current.classList.toggle('nav_list_search')
+    Searchinp.current.classList.toggle('nav_serch_inp')
+  }
   console.log(language);
   const [active, setActive] = useState(0)
           return (
@@ -43,6 +49,7 @@ function Header() {
                               <span className='nav_location'>
                                 <a href="">
                                   <img src={Locationimg} alt="" />
+                                  {/* <input type="" /> */}
                                 </a>
                               </span>
                               <span className='nav_list_item_address'>
@@ -64,12 +71,11 @@ function Header() {
                           <img src={logo} alt="" />
                         </a>
                       </li>
-                      <li className='nav_list_item'>
+                      <li ref={Searchref} className='nav_list_item '>
                                 <span className='nav_search'>
-                                  <a href="">
-                                    <img src={Herolupa} alt="" />
-                                  </a>
+                                    <img onClick={search} src={Herolupa} alt="" />
                                 </span>
+                                <input ref={Searchinp} className='nav_serch_inp1' type="text" name="" id="" placeholder='Поиск по сайту' />
                       </li>
                       <li className='nav_list_item '>
                                 <span className='nav_facebook'>
@@ -100,12 +106,12 @@ function Header() {
                   </nav>
                   <div ref={navBottom} className="nav_bottom">
                     <ul  className='nav_bottom_list'>
-                      <li onClick={()=> setActive(0)} className={active == 0 ?'nav_bottom_item1':'nav_bottom_item1'}><Link>МАГАЗИН</Link></li>
-                      <li className='nav_bottom_itemO'> <span></span> <Link> О КОМПАНИИ </Link></li>
-                      <li><Link>ПРОДУКЦИЯ</Link></li>
-                      <li> <Link>УСЛУГИ</Link></li>
-                      <li><Link>АКЦИИ И НОВОСТИ </Link></li>
-                      <li className='nav_bottom_item6'><Link>ОБРАТНАЯ СВЯЗЬ</Link></li>
+                      <li  className='nav_bottom_item1'><Link onClick={()=> setActive(0)} className={active == 0 ?'nav_bottom_a2':null}>МАГАЗИН</Link></li>
+                      <li className='nav_bottom_itemO'> <Link onClick={()=> setActive(1)} className={active == 1 ?'nav_bottom_a2':null}> О КОМПАНИИ </Link></li>
+                      <li><Link onClick={()=> setActive(2)} className={active == 2 ?'nav_bottom_a2':null}>ПРОДУКЦИЯ</Link></li>
+                      <li> <Link onClick={()=> setActive(3)} className={active == 3 ?'nav_bottom_a2':null}>УСЛУГИ</Link></li>
+                      <li><Link onClick={()=> setActive(4)} className={active == 4 ?'nav_bottom_a2':null}>АКЦИИ И НОВОСТИ </Link></li>
+                      <li className='nav_bottom_item6'><Link onClick={()=> setActive(5)} className={active == 5 ?'nav_bottom_a2':null}>ОБРАТНАЯ СВЯЗЬ</Link></li>
                     </ul>
                   </div>
                 </div>
