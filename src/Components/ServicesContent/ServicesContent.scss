@@ -1,0 +1,41 @@
+.services_title{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        color: #0D4C93;   
+    }
+    p{
+        color: #0D4C93;
+        span{
+            color: #000;
+        }
+    }
+}
+.services_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    .content{
+        width: 400px;
+        height: 332px;
+        top: 862px;
+        left: 1209px;
+        border-radius: 35px;
+        align-items: center;
+        img{
+            margin-left: 50px;
+        }
+        p{
+            text-align: center;
+             width: 300px;
+        }
+    }
+}
+.off{
+    img{
+        margin-bottom: 65px;
+    }
+}
