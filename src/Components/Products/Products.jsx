@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Products.scss'
 import  hirurgiyaImg from '../../assets/img/hirurg-img.png'
 import  lobaratoryImg from '../../assets/img/lobaratory-img.png'
@@ -7,7 +7,25 @@ import  diabetImg from '../../assets/img/diabet-img.png'
 import  endourologImg from '../../assets/img/endourolog-img.png'
 import  aritmologiyaImg from '../../assets/img/aritmalogiya-img.png'
 import { Link } from 'react-router-dom'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+
+
+
+// import required modules
+import { FreeMode, Pagination } from 'swiper/modules';
 function Products() {
+  const [vWidth, setVWidth] = useState(window.innerWidth)
+
+  window.addEventListener('resize', ()=>{
+    setVWidth(window.innerWidth)
+  })
   return (
     <div className='Product'>
       <div className="container">
@@ -15,36 +33,54 @@ function Products() {
         <h2 className='product__tittle'>ПРОДУКЦИЯ</h2>
         <div className="product_list_father">
         <ul className="product__list">
-            <li className='product__list-item'>
+        <Swiper
+        slidesPerView={vWidth >= 1246 ? 6 : 2 && vWidth >= 662 ? 2 : 1}
+        spaceBetween={0}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide className='product_slider'><li className='product__list-item'>
                 <img className='product__first-img' src={hirurgiyaImg} alt="" />
                 <p className='f-info'>Эндоваскулярная <br /> хирургия</p> 
                 <button className='f-btn' >Посмотреть все</button>
-            </li>
-            <li className='product__list-item'>
-                <img className='product__second-img' src={lobaratoryImg} alt="" />
-                <p className='s-info'>Лабораторная <br /> диагностика</p>
-                <button className='s-btn'>Посмотреть все</button>
-            </li>
-            <li className='product__list-item'>
+            </li></SwiperSlide>
+        <SwiperSlide><li className='product__list-item'>
                 <img className='product__third-img' src={kardiohirurgImg} alt="" />
                 <p className='t-info'>Кардиохирургия</p>
                 <button className='t-btn'>Посмотреть все</button>
-            </li>
-            <li className='product__list-item'>
+            </li></SwiperSlide>
+        <SwiperSlide><li className='product__list-item'>
+                <img className='product__second-img' src={lobaratoryImg} alt="" />
+                <p className='s-info'>Лабораторная <br /> диагностика</p>
+                <button className='s-btn'>Посмотреть все</button>
+            </li></SwiperSlide>
+        <SwiperSlide> <li className='product__list-item'>
+                <img className='product__third-img' src={kardiohirurgImg} alt="" />
+                <p className='t-info'>Кардиохирургия</p>
+                <button className='t-btn'>Посмотреть все</button>
+            </li></SwiperSlide>
+        <SwiperSlide><li className='product__list-item'>
                 <img className='product__fours-img' src={diabetImg} alt="" />
                 <p className='fo-info'>ДИАБЕТ</p>
                 <button className='fo-btn'>Посмотреть все</button>
-            </li>
-            <li className='product__list-item'>
+            </li></SwiperSlide>
+        <SwiperSlide><li className='product__list-item'>
                 <img className='product__fivs-img' src={endourologImg} alt="" />
                 <p className='fi-info'>ЭНДОУРОЛОГИЯ</p>
                 <button className='fi-btn'>Посмотреть все</button>
-            </li>
-            <li className='product__list-item'>
+            </li></SwiperSlide>
+        <SwiperSlide> <li className='product__list-item'>
                 <img className='product__last-img' src={aritmologiyaImg} alt="" />
                 <p className='si-info'>АРИТМОЛОГИЯ</p>
                 <button className='si-btn'>Посмотреть все</button>
-            </li>
+            </li></SwiperSlide>
+      </Swiper>
+
+           
         </ul>
         </div>
       </div>

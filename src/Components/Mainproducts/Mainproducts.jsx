@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Mainproducts.scss'
 import { mahsulotdata } from '../../lib/MahsulotData'
 
 function Mainproducts() {
+  // const [vWidth, setVWidth] = useState(window.innerWidth)
+
+  // window.addEventListener('resize',()=>{
+  //   setVWidth(window.innerWidth)
+  // })
   return (
     <div className='mainproducts'>
        <div className="container">
@@ -12,13 +17,40 @@ function Mainproducts() {
             <p className='filt__prod'>Фильтр:</p>
             <ul className='mproduct__btn-list'>
               <li className='p-list__item'>
-              <button type="button" class="btn1 btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Бренд</button>
+              <div class="btn-group nav_btnLanguage" role="group">
+                              
+                              <p className='nav_btn_languagename'></p>
+                                <ul class="dropdown-menu">
+                                  <li><a  class="dropdown-item" href="#">Бренд</a></li>
+                                  <li><a  class="dropdown-item" href="#">Категория</a></li>
+                                  <li><a  class="dropdown-item" href="#">Направление</a></li>
+                                </ul>
+                                <button type="button" class="btn1 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Бренд</button>
+                      </div>
               </li>
               <li  className='p-list__item'>  
-              <button type="button" class="btn2 btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Категория</button>
+              <div class="btn-group nav_btnLanguage" role="group">
+                              
+                              <p className='nav_btn_languagename'></p>
+                                <ul class="dropdown-menu">
+                                  <li><a  class="dropdown-item" href="#">Бренд</a></li>
+                                  <li><a  class="dropdown-item" href="#">Категория</a></li>
+                                  <li><a  class="dropdown-item" href="#">Направление</a></li>
+                                </ul>
+                                <button type="button" class="btn2 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Категория</button>
+                      </div>
               </li>
               <li className='p-list__item'>
-              <button type="button" class="btn3 btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button>
+              <div class="btn-group nav_btnLanguage" role="group">
+                              
+                              <p className='nav_btn_languagename'></p>
+                                <ul class="dropdown-menu">
+                                  <li><a  class="dropdown-item" href="#">Бренд</a></li>
+                                  <li><a  class="dropdown-item" href="#">Категория</a></li>
+                                  <li><a  class="dropdown-item" href="#">Направление</a></li>
+                                </ul>
+                                <button type="button" class="btn3 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">Направление</button>
+                      </div>
               </li>
             </ul>
             
