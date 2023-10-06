@@ -23,7 +23,7 @@ function Mainproducts() {
             </ul>
         </nav>
         <ul className='mproduct__list'>
-        {
+          {
           mahsulotdata?.map((item,index) =>(
             <li key={index}>
               <img src={item.img} alt="" />
