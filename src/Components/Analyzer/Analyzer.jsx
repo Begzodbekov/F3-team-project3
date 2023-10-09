@@ -12,7 +12,7 @@ function Analyzer() {
               <h2>Биохимические анализаторы</h2>
             </span>
             <span className="analyzer__top__two"> 
-            <a href="#/">Главная</a>
+            <a href="/">Главная</a>
               <p> / Продукция / биохимические анализаторы</p>
             </span>
           </div>

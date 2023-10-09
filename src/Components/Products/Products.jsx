@@ -19,7 +19,7 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import {  Grid, Pagination } from 'swiper/modules';
 function Products() {
   const [vWidth, setVWidth] = useState(window.innerWidth)
 
@@ -34,14 +34,16 @@ function Products() {
         <div className="product_list_father">
         <ul className="product__list">
         <Swiper
-        slidesPerView={vWidth >= 1246 ? 6 : 2 && vWidth >= 662 ? 2 : 1}
-        spaceBetween={0}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
+       slidesPerView={3}
+       grid={{
+         rows: 2,
+       }}
+       spaceBetween={30}
+      //  pagination={{
+      //    clickable: true,
+      //  }}
+       modules={[Grid, Pagination]}
+       className="mySwiper"
       >
         <SwiperSlide className='product_slider'><li className='product__list-item'>
                 <img className='product__first-img' src={hirurgiyaImg} alt="" />

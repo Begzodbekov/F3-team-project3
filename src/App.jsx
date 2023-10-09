@@ -9,19 +9,21 @@ import Tavar from "./pages/Tavar/Tavar";
 import Services from "./pages/Services/Services";
 import TovarD from "./pages/Tovar__D/TovarD";
 import Contactpage from "./pages/Contactpage/Contactpage";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/mahsulot' element={<Mahsulot/>}/>
-        <Route path='/tavar' element={<Tavar/>}/>
-        <Route path='/tovarD/:slug'element={<TovarD/>}/>
-        <Route path='/services'element={<Services/>}/>
-        <Route path='/contact' element={<Contactpage/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/mahsulot" element={<Mahsulot />} />
+        <Route path="/tavar" element={<Tavar />} />
+        <Route path="/tovarD/:slug" element={<TovarD />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contactpage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
