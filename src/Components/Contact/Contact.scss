@@ -51,7 +51,7 @@
             padding: 6px;
             border-radius: 15px;
             letter-spacing: 2px;
-}
+        }
      }
 
 }
@@ -63,3 +63,106 @@
     border-radius: 35px;
 
 }
+.contact_viloyat{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    
+   
+}
+.fergana{
+    border-radius: 25px;
+    box-shadow: 0px 1px 4px 0px #0000001A;
+    background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+    width: 530px;
+    height: 292px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 45px;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        align-items: center;
+
+    }
+    h3{
+        width: 100%;
+    }
+  
+    i{
+        margin-bottom: 15px;
+        font-size: 17px;
+        padding: 10px;
+        margin-right: 10px;
+        color: #0D4C93;
+
+    }
+    button{
+        margin-bottom: 10px;
+        margin-left: 75px;
+        border: none;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        padding: 6px;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        background: #0D4C93;
+        width: 170px;
+        height: 50px;
+        top: 1175px;
+        left: 1339px;
+        border-radius: 35px;
+        opacity: 0.9px;
+        
+        
+    }
+ }
+ .samarqand{
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 4px 0px #0000001A;
+    background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+    width: 520px;
+    height: 292px;
+    padding: 20px;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        align-items: center;
+
+    }
+    h3{
+        width: 100%;
+    }
+  
+    i{
+        margin-bottom: 15px;
+        font-size: 17px;
+        padding: 10px;
+        margin-right: 10px;
+        color: #0D4C93;
+
+    }
+    button{
+        margin-bottom: 10px;
+        margin-left: 75px;
+        border: none;
+        background: #0D4C93;
+        padding: 6px;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        width: 170px;
+        height: 50px;
+        top: 1175px;
+        left: 1339px;
+        border-radius: 35px;
+        opacity: 0.9px;
+
+    }
+ }
+ .s{
+    margin-top: 60px;
+ }

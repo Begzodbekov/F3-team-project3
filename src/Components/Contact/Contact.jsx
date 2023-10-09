@@ -48,6 +48,63 @@ function Contact() {
                         <img src={map} alt="" />
                     </div>
                 </div>
+                <h3 className='s'>Наши филиалы в других регионах</h3>
+                <div className="contact_viloyat">
+                    <div className="fergana">
+                   <h3>Ферганская область:</h3>
+                        <div><i class="bi bi-geo-alt-fill"></i>
+                            <p>
+                            г.Фергшана, Алишер. Н <br />
+                             10 квартал, дом 3/1
+                            </p>
+                            </div>
+                            <div>
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>
+                            +998 71 276-62-53 <br />
+                            +998 71 276-62-54
+                            </p>
+                            </div>
+                            <div>
+                            <i class="bi bi-envelope-fill"></i>
+                           <p>
+                           info@medol.uz  
+                           </p>
+                            </div>
+                            <div>
+                                <button>
+                                На карте
+                                </button>
+                    </div>
+                    </div>
+                    <div className="samarqand">
+                        <h3>Самаркандская область:</h3>
+                    <i class="bi bi-geo-alt-fill"></i>
+                            <p>
+                            г.Самарканд, Навои <br />
+                             10 квартал, дом 3/1
+                            </p>
+                           
+                            <div>
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>
+                            +998 71 276-62-53 <br />
+                            +998 71 276-62-54
+                            </p>
+                            </div>
+                            <div>
+                            <i class="bi bi-envelope-fill"></i>
+                           <p>
+                           info@medol.uz  
+                           </p>
+                            </div>
+                            <div>
+                                <button>
+                                На карте
+                                </button>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
