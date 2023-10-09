@@ -3,6 +3,7 @@
     background-image: url('../../assets/img/header_background.png');
     background-repeat: no-repeat;
     height: 350px;
+    background-size: 100%;
 }
 .nav_inner{
     margin-left: -90px;
@@ -340,7 +341,7 @@
                 border-radius: 10px;
                 height: 276px;
                 padding: 10px;
-                width: 400px;
+                width: 330px;
                 position: absolute;
                 z-index: 99;
                 opacity: 1 !important;
@@ -353,23 +354,23 @@
                 
                 }
                 :nth-child(3){
-                    margin-left: -214px;
+                    margin-left: -185px;
                 }
                 :nth-child(4){
-                    margin-left: -250px;
+                    margin-left: -220px;
                 }
                 :nth-child(5){
-                    margin-left: -151px;
+                    margin-left: -121px;
                 }
             }
             .nav_bottom_item1{
-                margin-left: -244px !important;
+                margin-left: -204px !important;
             }
             .nav_bottom_itemO{
-                margin-left: -206px !important;
+                margin-left: -172px !important;
             }
             .nav_bottom_item6{
-                margin-left: -173px !important;
+                margin-left: -143px !important;
             }
     }
     .nav_list{
@@ -427,35 +428,62 @@
             
         }
     }
-
+    
     .nav_bottom{
         display: none ;
     }
 }
 
+// @media screen and (max-width: 822px){
+//     .nav_bottom_list{
+//         margin-left: -15px !important;
+//         padding: 10px !important;
+//         width: 335px !important;
+
+//         :nth-child(3){
+//             margin-left: -190px !important;
+//         }
+//         :nth-child(4){
+//             margin-left: -223px !important;
+//         }
+//         :nth-child(5){
+//             margin-left: -130px !important;
+//         }
+
+//         .nav_bottom_item1{
+//             margin-left: -210px !important;
+//         }
+//         .nav_bottom_itemO{
+//             margin-left: -180px !important;
+//         }
+//         .nav_bottom_item6{
+//             margin-left: -145px !important;
+//         }
+//     }
+// }
 @media screen and (max-width: 768px){
     .nav_list{
         // width: 500px;
         .nav_list_item{
             .nav_location{
-                margin-left: 216px;
+                margin-left: 202px;
             }
             .nav_search{
                 margin-left: 269px !important;
                 padding: 10px !important;
             }
             .nav_btnLanguage{
-                margin-left: -105px !important ;
+                margin-left: -85px !important ;
             }
         }
         .nav_calll{
             .header_phone{
-                margin-left: 55px !important;
+                margin-left: 49px !important;
             }
         }
         .hero_navbar_responsive{
             display:block !important;
-            margin-left: -238px;
+            margin-left: -198px;
         }
     }
     .nav_btnLanguage{
@@ -468,8 +496,93 @@
             display: none;
         }
     }
-}
+    .nav_bottom_list{
+        margin-left: -137px  !important;
+        padding: 10px !important;
+        width: 335px !important;
 
+        :nth-child(3){
+            margin-left: -190px !important;
+        }
+        :nth-child(4){
+            margin-left: -223px !important;
+        }
+        :nth-child(5){
+            margin-left: -130px !important;
+        }
+
+        .nav_bottom_item1{
+            margin-left: -210px !important;
+        }
+        .nav_bottom_itemO{
+            margin-left: -180px !important;
+        }
+        .nav_bottom_item6{
+            margin-left: -145px !important;
+        }
+    }
+}
+@media screen and (max-width: 622px){
+    .nav_list{
+        // width: 500px;
+        .nav_list_item{
+            .nav_location{
+                margin-left: 202px;
+            }
+            .nav_search{
+                margin-left: 269px !important;
+                padding: 10px !important;
+            }
+            .nav_btnLanguage{
+                margin-left: -85px !important ;
+            }
+        }
+        .nav_calll{
+            .header_phone{
+                margin-left: 49px !important;
+            }
+        }
+        .hero_navbar_responsive{
+            display:block !important;
+            margin-left: -198px;
+        }
+    }
+    .nav_btnLanguage{
+       
+        margin-left: -50px !important;
+        height: 50px;
+        padding: 0px 10px 0px 8px !important;
+        transition: 500ms ease;
+        .nav_btn_languagename{
+            display: none;
+        }
+    }
+    .nav_bottom_list{
+        margin-left: -137px  !important;
+        padding: 10px !important;
+        width: 335px !important;
+
+        :nth-child(3){
+            margin-left: -190px !important;
+        }
+        :nth-child(4){
+            margin-left: -223px !important;
+        }
+        :nth-child(5){
+            margin-left: -130px !important;
+        }
+
+        .nav_bottom_item1{
+            margin-left: -210px !important;
+        }
+        .nav_bottom_itemO{
+            margin-left: -180px !important;
+        }
+        .nav_bottom_item6{
+            margin-left: -145px !important;
+        }
+    }
+}
 @media screen and (max-width: 375px){
     .nav_list{
         margin-left: 421px;
@@ -491,6 +604,7 @@
         }
         .hero_navbar_responsive{
             // margin-left: -12px;
+
             img{
                 width: 50px;
                 margin-right: 42px;
@@ -506,6 +620,34 @@
         .nav_calll{
             margin-left: -276px;
             position: absolute;
+        }
+    }
+    .nav_bottom_list{
+        margin-left: -330px !important;
+        padding: 10px !important;
+        width: 235px !important;
+        li{
+            background: none !important;
+            font-size: 15px !important;
+        }
+        :nth-child(3){
+            margin-left: -90px !important;
+        }
+        :nth-child(4){
+            margin-left: -123px !important;
+        }
+        :nth-child(5){
+            margin-left: -25px !important;
+        }
+
+        .nav_bottom_item1{
+            margin-left: -110px !important;
+        }
+        .nav_bottom_itemO{
+            margin-left: -80px !important;
+        }
+        .nav_bottom_item6{
+            margin-left: -5px !important;
         }
     }
 }
