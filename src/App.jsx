@@ -10,6 +10,7 @@ import Services from "./pages/Services/Services";
 import TovarD from "./pages/Tovar__D/TovarD";
 import Contactpage from "./pages/Contactpage/Contactpage";
 import Footer from "./Components/Footer/Footer";
+import Promotions from "./pages/promotions/promotions";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/tovarD/:slug" element={<TovarD />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contactpage />} />
+        <Route path="/promotions" element={<Promotions/>} />
       </Routes>
       <Footer />
     </div>
