@@ -45,7 +45,7 @@ function AnalyzerD() {
                       Производитель: 
                       <span>{item.manufacturer}</span>
                       </span>
-                      <span className="info">
+                      <span className="info__Anal">
                         Автоматический настольный анализатор гемостаза для
                         лабораторий среднего размера.
                       </span>
