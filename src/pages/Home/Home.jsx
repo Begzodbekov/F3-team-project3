@@ -14,11 +14,12 @@ function Home() {
   return (
     <div className='Home'>
       <Hero/>
-      {/* <Products/> */}
-      {/* <Uslugi/> */}
-      {/* <Company/> */}
-      {/* <Novosti/> */}
-      {/* <Partner/> */}
+      <Products/>
+      <Novosti/>
+      <Uslugi/>
+      <Company/>
+      <Partner/>
+      
 
 
     </div>

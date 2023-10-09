@@ -12,7 +12,7 @@ function Analyzer() {
               <h2>Биохимические анализаторы</h2>
             </span>
             <span className="analyzer__top__two"> 
-            <a href="#/">Главная</a>
+            <a href="/">Главная</a>
               <p> / Продукция / биохимические анализаторы</p>
             </span>
           </div>
@@ -37,10 +37,12 @@ function Analyzer() {
                         {item.manufacturer}
                    </span>
                   </span>
-<button className="bottom__btn">
-  <Link className="bottom"  to={`/author/${item.id}`}>Подробнее</Link>
+<span className="span__btn">
 
-</button>
+  <Link className="bottom"  to={`/tovarD/${item.id}`}>Подробнее</Link>
+</span>
+
+
                 </li>
               ))}
             </ul>

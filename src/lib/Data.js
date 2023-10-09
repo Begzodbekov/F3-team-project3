@@ -10,11 +10,7 @@ import analyzer__night from '../assets/img/analyzer__night.png'
 import analyzer__ten from '../assets/img/analyzer__ten.png'
 import analyzer__eleven from '../assets/img/analyzer__eleven.png'
 // import analyzer__twelve from '../assets/img/analyzer__twelve.png'
-export const data = [
-          {
-                    id:1,
-          }
-]
+
 export const analyzer = [
     {
         id:1,

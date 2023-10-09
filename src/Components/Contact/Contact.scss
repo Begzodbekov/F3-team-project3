@@ -51,15 +51,181 @@
             padding: 6px;
             border-radius: 15px;
             letter-spacing: 2px;
-}
+        }
      }
 
 }
 .map{
-    width: 777px;
-    height: 403px;
-    top: 435px;
-    left: 863px;
-    border-radius: 35px;
+    iframe{
+        width: 777px;
+        height: 350px;
+    }
 
 }
+.contact_viloyat{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    
+   
+}
+.fergana{
+    border-radius: 25px;
+    box-shadow: 0px 1px 4px 0px #0000001A;
+    background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+    width: 530px;
+    height: 292px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 45px;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        align-items: center;
+
+    }
+    h3{
+        width: 100%;
+    }
+  
+    i{
+        margin-bottom: 15px;
+        font-size: 17px;
+        padding: 10px;
+        margin-right: 10px;
+        color: #0D4C93;
+
+    }
+    button{
+        margin-bottom: 10px;
+        margin-left: 75px;
+        border: none;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        padding: 6px;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        background: #0D4C93;
+        width: 170px;
+        height: 50px;
+        top: 1175px;
+        left: 1339px;
+        border-radius: 35px;
+        opacity: 0.9px;
+        
+        
+    }
+ }
+ .samarqand{
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 4px 0px #0000001A;
+    background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+    width: 520px;
+    height: 292px;
+    padding: 20px;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        align-items: center;
+
+    }
+    h3{
+        width: 100%;
+    }
+  
+    i{
+        margin-bottom: 15px;
+        font-size: 17px;
+        padding: 10px;
+        margin-right: 10px;
+        color: #0D4C93;
+
+    }
+    button{
+        margin-bottom: 10px;
+        margin-left: 75px;
+        border: none;
+        background: #0D4C93;
+        padding: 6px;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        width: 170px;
+        height: 50px;
+        top: 1175px;
+        left: 1339px;
+        border-radius: 35px;
+        opacity: 0.9px;
+
+    }
+ }
+ .s{
+    margin-top: 60px;
+ }
+ .contact_bottom{
+    margin-top: 25px;
+    height: 500px;
+ }
+ .contact_input{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+ }
+ .first_input{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #DFDFDF;
+    border-radius: 15px;
+    input{
+        border: none;
+        outline: none;
+        flex-grow: 1;
+    }
+    i{
+        width: 20px;
+        height: 20px;
+        fill: #595959;
+        margin-right: 5px;
+    }
+ }
+ .contact_area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    textarea{
+        margin-top: 50px;
+        width: 95%;
+        outline: none;
+        border: 1px solid #DFDFDF;
+        resize: none;
+        border-radius: 15px;
+    }
+ }
+ .bottom_text{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    input{
+        
+    }
+    p{
+        width: 1100px;
+        padding: 20px;
+    }
+ }
+ .btn{
+    button{
+        border: none;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        padding: 6px;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        outline: none;
+    }
+ }
