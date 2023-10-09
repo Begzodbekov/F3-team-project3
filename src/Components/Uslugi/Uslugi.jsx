@@ -17,9 +17,10 @@ function Uslugi() {
     setVWidth(window.innerWidth)
   })
   return (
+    <div className="Uslugi__con">
     <div className="container">
-        <h1 className="frame__title1">Услуги</h1>
-        <ul className="frame__1">
+       <h1 className="frame__title1">Услуги</h1>
+      <ul className="frame__1">
           <>
           <Swiper
           slidesPerView={vWidth >= 1246 ? 3 : 2 && vWidth >= 662 ? 2 : 1}
@@ -42,6 +43,10 @@ function Uslugi() {
           </>
         </ul>
       </div>
+    </div>
+
+
+
   );
 }
 

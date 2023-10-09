@@ -8,12 +8,11 @@
     text-align: center;
 }
 
-.frame__con {
-    width: 1460px;
-    height: 681px;
+.Uslugi__con{
+    background-image: url(../../assets/img/uslugiBlur.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
-
-
 
 .frame__1 {
     background: linear-gradient(180deg, #FAFAFA 0%, rgba(250, 250, 250, 0) 100%);
@@ -22,8 +21,6 @@
     flex-direction: row;
     align-items: center;
     // margin-left: -271px !important;
-    background-image: url(../../assets/img/uslugiBlur.png);
-
     .swiper {
         height: 700px !important;
     }
