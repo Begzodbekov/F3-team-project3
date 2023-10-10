@@ -9,6 +9,7 @@ import Tavar from "./pages/Tavar/Tavar";
 import Services from "./pages/Services/Services";
 import TovarD from "./pages/Tovar__D/TovarD";
 import Contactpage from "./pages/Contactpage/Contactpage";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/services'element={<Services/>}/>
         <Route path='/contact' element={<Contactpage/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }
