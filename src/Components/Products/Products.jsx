@@ -34,14 +34,14 @@ function Products() {
         <div className="product_list_father">
         <ul className="product__list">
         <Swiper
-       slidesPerView={3}
+       slidesPerView={vWidth >= 1516 ? 3 : 2 && vWidth >= 1351 ? 2 : 1}
        grid={{
          rows: 2,
        }}
        spaceBetween={30}
-      //  pagination={{
-      //    clickable: true,
-      //  }}
+       pagination={{
+         clickable: true,
+       }}
        modules={[Grid, Pagination]}
        className="mySwiper"
       >
