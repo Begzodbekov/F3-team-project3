@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.scss";
 import Icona from "../../assets/img/icon_a.png";
 import Iconb from "../../assets/img/icon_b.png";
@@ -6,9 +6,25 @@ import Iconc from "../../assets/img/icon_c.png";
 import Logotip from "../../assets/img/logotip.png";
 
 function Footer() {
+const [shadow , setShadow]=useState(false)
+console.log(shadow);
   return (
     <div className="background_img">
       <div className="container">
+      <div className="shadow__inner">
+      <div className="shadow">
+       <h2>Оставьте заявку</h2>
+       <input className="name" type="text" placeholder="ФИО"/>
+        <input className="tel" type="text" placeholder="Номер телефона*"/>
+        <input className="thre" type="text" placeholder="Тема обращения*" />
+        <textarea className="big__inp"  cols="30" rows="5"></textarea>
+       <span className="chek__big">
+       <input className="chek" type="checkbox"  />
+        <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+       </span>
+        <button className="btn__shadow">Отправить</button>
+      </div>
+      </div>
         <div className="footer_big_box">
           <div className="left_box">
             <div className="left_top_box">
@@ -46,8 +62,9 @@ function Footer() {
                   <p className="footer_text">info@medol.uz </p>
                 </div>
                 <div className="b_inner">
-                  <button className="btn">Оставить заявку</button>
+                  <button onClick={()=>setShadow(!shadow)} className="btn">Оставить заявку</button>
                 </div>
+
               </div>
             </div>
 
