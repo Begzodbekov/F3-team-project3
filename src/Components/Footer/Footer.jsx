@@ -1,14 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.scss";
 import Icona from "../../assets/img/icon_a.png";
 import Iconb from "../../assets/img/icon_b.png";
 import Iconc from "../../assets/img/icon_c.png";
 import Logotip from "../../assets/img/logotip.png";
-
+// className="shadow__inner "
 function Footer() {
+  window.addEventListener('click', (e)=>{
+    
+  console.log(e.target.id);
+  if(e.target.id != 'close' && e.target.id != 'open' ){
+    setShadow(false)
+  }
+  })
+
+const [shadow , setShadow]=useState(false)
+console.log(shadow);
   return (
     <div className="background_img">
       <div className="container">
+      <div  className={shadow == true?'active':'shadow__inner'} >
+      <div id="close" className="shadow">
+       <div id="close"  className="icons__shadow">
+        <i  onClick={()=> setShadow(false)}  className="bi bi-x-lg"></i>
+       </div>
+       <div>
+        <h2 id="close">Оставьте заявку</h2>
+        <input id="close" className="name" type="text" placeholder="ФИО"/>
+         <input id="close" className="tel" type="text" placeholder="Номер телефона*"/>
+         <input id="close" className="thre" type="text" placeholder="Тема обращения*" />
+         <textarea id="close" className="big__inp"  cols="30" rows="5"></textarea>
+        <span id="close" className="chek__big">
+        <input id="close" className="chek" type="checkbox"  />
+         <p id="close" > Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+        </span>
+         <button id="close" className="btn__shadow">Отправить</button>
+       </div>
+      </div>
+      </div>
         <div className="footer_big_box">
           <div className="left_box">
             <div className="left_top_box">
@@ -45,9 +74,10 @@ function Footer() {
                   </div>
                   <p className="footer_text">info@medol.uz </p>
                 </div>
-                <div className="b_inner">
-                  <button className="btn">Оставить заявку</button>
+                <div  className="b_inner">
+                  <button id="open" onClick={()=> setShadow(!shadow)} className="btn">Оставить заявку</button>
                 </div>
+
               </div>
             </div>
 

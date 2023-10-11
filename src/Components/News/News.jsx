@@ -27,13 +27,17 @@ function News() {
                             <li key={index} className='News__item__1'>
                                 <img className='item__1__img' src={item.img} alt="img" />
                                 <h4 className='item__1__text1'>{item.text}</h4>
-                                <h4 className='item__1__date__1'>{item.date}</h4>
+                                <h4 className='item__1__date__1'><b>{item.date}</b></h4>
                                 <p className='item__1__text__2'>{item.text2}</p>
+                                <button className='item__btn'>Подробнее</button>
                             </li>
                         ))
 
                     }
                 </ul>
+                <div className='item__link__con'>
+                <Link className='item__link__1'>Посмотреть еще</Link>
+                </div>
             </div>
         </div>
     )
