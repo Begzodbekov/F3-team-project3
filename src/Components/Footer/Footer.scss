@@ -1,17 +1,18 @@
 .background_img {
   background-image: url("../../assets/img/footer_img.png");
+  background-repeat: no-repeat;
   width: 100%;
   height: auto;
-  border: solid 1px grey;
   padding: 50px 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ background-position: bottom;
   transition: all 2s ease;
+ 
 }
 
 .footer_big_box {
   display: flex;
   gap: 30px;
-  overflow: hidden;
 }
 
 .left_box {
@@ -299,7 +300,29 @@ flex-shrink: 0;
   }
 }
 .shadow__inner{
+  max-width: 1336px;
   height: 500px;
   position: relative;
-  transform: translateX(2000px);
+  margin-left: 1500px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  // background-color: transparent;
+
 }
+.active{
+  max-width: 1336px;
+  position: relative;
+  bottom: 0px;
+  
+// background-color: transparent;
+ .shadow{
+display: flex;
+justify-content: center;
+position: fixed;
+z-index: 99;
+box-shadow: 0px 200px 8000px 1300px #2b2222ab !important;
+margin-top: 100px;
+}
+}
+
