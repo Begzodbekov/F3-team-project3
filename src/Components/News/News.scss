@@ -89,7 +89,13 @@
 
     .News__item__1 {
         width: 382px;
-        height: 618px;
+        margin-left: 20px;
+        border-radius: 35px;
+        border: 2px solid #F6F6F6;
+        opacity: 0.9;
+        background: linear-gradient(180deg, #F8F8F8 0%, rgba(255, 255, 255, 0.00) 100%);
+        margin-top: 88px;
+        margin-bottom: 66px;
 
         .item__1__text1 {
             color: #0D4C93;
@@ -99,12 +105,72 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            width: 277px;
+            margin-top: 23px;
+            height: 72px;
+            margin-left: 37px;
+        }
+
+        .item__1__date__1 {
+            color: #0D4C93;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            margin-left: -42px;
+        }
+
+        .item__1__text__2 {
+            width: 327px;
+            height: 171px;
+            color: #363535;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 20px;
         }
 
         .item__1__img {
             width: 335px;
             height: 251px;
             border-radius: 20px;
+            margin: 0 auto;
+            margin-top: -100px;
+            margin-left: 17px;
         }
     }
+
+    .item__btn {
+        width: 270px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        border: none;
+        margin-left: 53px;
+        margin-bottom: -118px;
+    }
 }
+
+.item__link__con{
+    margin-bottom: 82px;
+    .item__link__1 {
+        width: 214px;
+        color: #00C9C9;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 560px;
+        text-decoration: none;
+    }
+}
+
