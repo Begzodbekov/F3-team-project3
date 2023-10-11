@@ -120,16 +120,36 @@ function Header() {
                         <Link to={'/'}  className={location == '/' ?'nav_bottom_a2':null}> 
                           <span className={language!= "Русский"?"none":'block'}>МАГАЗИН</span>
                           <span className={language == "Uzbek"? "block": "none"} >MAGAZIN</span>
-                          <span className={language != "English"? "none":"block"}>SHOP</span>
+                          <span className={language != "English"? "none":"blocks"}>SHOP</span>
                         </Link>
                       </li>
                       <li className='nav_bottom_itemO'> 
-                        <Link  className={location == '/company' ?'nav_bottom_a2':null}> О КОМПАНИИ </Link>
+                        <Link  className={location == '/company' ?'nav_bottom_a3':null}> 
+                          <span className={language == "Русский"? "block":"none"}>О КОМПАНИИ</span> 
+                          <span className={language == "Uzbek"? "blockes":"none"}>KOMPANIYA HAQIDA</span>
+                          <span className={language == "English"? "block":"none"}>ABOUT COMPANY</span>
+                        </Link>
                       </li>
-                      <li><Link to='/mahsulot' className={location == '/mahsulot' ?'nav_bottom_a2':null}>ПРОДУКЦИЯ</Link></li>
-                      <li> <Link to='/services' className={location == '/services' ?'nav_bottom_a2':null}>УСЛУГИ</Link></li>
-                      <li> <Link className={location == '/news' ?'nav_bottom_a2':null}>АКЦИИ И НОВОСТИ </Link></li>
-                      <li className='nav_bottom_item6'><Link className={location == '/aloqa' ?'nav_bottom_a2':null}>ОБРАТНАЯ СВЯЗЬ</Link></li>
+                      <li>
+                        <Link to='/mahsulot' className={location == '/mahsulot' ?'nav_bottom_a4':null}>
+                          <span className= {language == "Русский"? "block":"none"}>ПРОДУКЦИЯ</span>
+                          <span className= {language == "Uzbek"? "block":"none"}>Mahsulot</span>
+                          <span className= {language == "English"? "block":"none"}>PRODUCTION</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='/services' className={location == '/services' ?'nav_bottom_a5':null}>
+                          <span className={language =="Русский"? "block":"none"}>УСЛУГИ</span>
+                          <span className={language =="Uzbek"? "block":"none"}>XIZMATLAR</span>
+                          <span className={language =="English"? "block":"none"}>SERVICES</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='/news' className={location == '/news' ?'nav_bottom_a6':null}>
+                          <span>АКЦИИ И НОВОСТИ</span>
+                        </Link>
+                      </li>
+                      <li className='nav_bottom_item6'><Link to='/aloqa' className={location == '/aloqa' ?'nav_bottom_a7':null}>ОБРАТНАЯ СВЯЗЬ</Link></li>
                     </ul>
                   </div>
                 </div>
