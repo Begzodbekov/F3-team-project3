@@ -19,6 +19,7 @@ function Home() {
       <Uslugi/>
       <Company/>
       <Partner/>
+      
 
 
     </div>
