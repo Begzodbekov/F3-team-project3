@@ -45,7 +45,8 @@ function Contact() {
                             </div>
                     </div>
                     <div className="map">
-                        <img src={map} alt="" />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.83987279827!2d69.11456007869414!3d41.282737945802886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1696845765997!5m2!1sru!2s" frameborder="0"></iframe>
+
                     </div>
                 </div>
                 <h3 className='s'>Наши филиалы в других регионах</h3>
@@ -104,6 +105,35 @@ function Contact() {
                                 </button>
                     </div>
                     </div>
+                </div>
+            </div>
+            <div className="contact_bottom">
+                <h3>Свяжитесь с нами</h3>
+                <div className="contact_input">
+                    <div className="first_input">
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" placeholder='Ваше имя'/>
+                    </div>
+                    <div className="first_input">
+                    <i class="bi bi-journal-medical"></i>
+                    <input type="text" placeholder='Тема обращения'/>
+                    </div>
+                    <div className="first_input">
+                    <i class="bi bi-pen-fill"></i>
+                    <input type="text" placeholder='Email или телефон'/>
+                    </div>
+                </div>
+                <div className="contact_area">
+                    <textarea name='' cols="140" rows="10" placeholder='Сообщение'></textarea>
+                </div>
+                <div className="bottom_text">
+                    <input type="checkbox" />
+                    <p>Я даю согласие OOO Medol и его аффилированным лицам на обработку моих персональныхданныхцеляхрассмомоего обращения, определенных в Положении об обработке персональных данных. </p>
+                </div>
+                <div className="btn">
+                    <button>
+                    Оставить заявку
+                    </button>
                 </div>
             </div>
         </div>
