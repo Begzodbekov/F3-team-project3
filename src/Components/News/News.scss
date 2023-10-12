@@ -61,8 +61,8 @@
         font-weight: 500;
         line-height: normal;
         border: none;
-    }
 
+    }
     .news__btn2 {
         width: 192px;
         height: 60px;
@@ -155,11 +155,21 @@
         border: none;
         margin-left: 53px;
         margin-bottom: -118px;
+        //text
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.8px;
     }
 }
 
-.item__link__con{
+.item__link__con {
     margin-bottom: 82px;
+
     .item__link__1 {
         width: 214px;
         color: #00C9C9;
@@ -174,3 +184,7 @@
     }
 }
 
+.arrow{
+    margin-left: 10px;
+    color: #00C9C9;
+}
