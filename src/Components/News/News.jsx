@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./News.scss"
 import { Link } from 'react-router-dom'
 import  { NewsAndPromotions1 } from "../../lib/NewsAndPromotions"
@@ -37,6 +37,7 @@ function News() {
                 </ul>
                 <div className='item__link__con'>
                 <Link className='item__link__1'>Посмотреть еще</Link>
+                <i class="bi bi-arrow-up-circle arrow"></i>
                 </div>
             </div>
         </div>
