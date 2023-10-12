@@ -118,8 +118,8 @@ function Header() {
                     <ul  className='nav_bottom_list'>
                       <li  className='nav_bottom_item1'>
                         <Link to={'/'}  className={location == '/' ?'nav_bottom_a2':null}> 
-                          <span className={language!= "Русский"?"none":'block'}>МАГАЗИН</span>
-                          <span className={language == "Uzbek"? "block": "none"} >MAGAZIN</span>
+                          <span className={language!= "Русский" ?"none":'blockr'}>МАГАЗИН</span>
+                          <span className={language == "Uzbek"? "blockr": "none"} >MAGAZIN</span>
                           <span className={language != "English"? "none":"blocks"}>SHOP</span>
                         </Link>
                       </li>
@@ -127,7 +127,7 @@ function Header() {
                         <Link  className={location == '/company' ?'nav_bottom_a3':null}> 
                           <span className={language == "Русский"? "block":"none"}>О КОМПАНИИ</span> 
                           <span className={language == "Uzbek"? "blockes":"none"}>KOMPANIYA HAQIDA</span>
-                          <span className={language == "English"? "block":"none"}>ABOUT COMPANY</span>
+                          <span className={language == "English"? "blocke":"none"}>ABOUT COMPANY</span>
                         </Link>
                       </li>
                       <li>
@@ -139,17 +139,25 @@ function Header() {
                       </li>
                       <li>
                         <Link to='/services' className={location == '/services' ?'nav_bottom_a5':null}>
-                          <span className={language =="Русский"? "block":"none"}>УСЛУГИ</span>
-                          <span className={language =="Uzbek"? "block":"none"}>XIZMATLAR</span>
-                          <span className={language =="English"? "block":"none"}>SERVICES</span>
+                          <span className={language =="Русский"? "blockus_a5":"none"}>УСЛУГИ</span>
+                          <span className={language =="Uzbek"? "blockus_a5":"none"}>XIZMATLAR</span>
+                          <span className={language =="English"? "blockus_a5":"none"}>SERVICES</span>
                         </Link>
                       </li>
                       <li>
                         <Link to='/news' className={location == '/news' ?'nav_bottom_a6':null}>
-                          <span>АКЦИИ И НОВОСТИ</span>
+                          <span className={language =="Русский"? "blockpro":"none"}>АКЦИИ И НОВОСТИ</span>
+                          <span className={language =="Uzbek"? "blockpro":"none"}>YANGILIKLAR</span>
+                          <span className={language =="English"? "blockpro":"none"}>NEWS</span>
                         </Link>
                       </li>
-                      <li className='nav_bottom_item6'><Link to='/aloqa' className={location == '/aloqa' ?'nav_bottom_a7':null}>ОБРАТНАЯ СВЯЗЬ</Link></li>
+                      <li className='nav_bottom_item6'>
+                        <Link to='/aloqa' className={location == '/aloqa' ?'nav_bottom_a7':null}>
+                          <span className={language =="Русский" ? "blockfirst":"none" }>ОБРАТНАЯ СВЯЗЬ</span>
+                          <span className={language =="Uzbek" ? "blockfirst blockfirst_2":"none" }>QAYTA ALOQA</span>
+                          <span className={language =="English" ? "blockfirst":"none" }>FEEDBACK</span>
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
