@@ -1,3 +1,6 @@
+.Novosti{
+    height: 100vh !important;
+}
 .gl_header {
     background-color: #fff;
 
@@ -16,7 +19,7 @@
 
         .gl_karta1 {
             width: 392px;
-            height: 570px;
+
             flex-shrink: 0;
             border-radius: 35px;
             border: 2px solid #F6F6F6;
@@ -129,7 +132,7 @@
 
         .gl_karta3 {
             width: 382px;
-            height: 570px;
+           
             flex-shrink: 0;
             border-radius: 35px;
             border: 2px solid #F6F6F6;

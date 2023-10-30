@@ -108,12 +108,6 @@ function Novosti() {
                         </Swiper>
 
                     </div>
-                    <Link className='Novosti__link'>Посмотреть все новости 
-                        <i class="bi bi-arrow-right-circle"></i>
-                    </Link>
-                    <Link className='Novosti__link1'>Подписаться на новости
-                        <i class="bi bi-arrow-right-circle"></i>
-                    </Link>
                 </div>
 
 
